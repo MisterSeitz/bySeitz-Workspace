@@ -1,0 +1,14 @@
+{
+"actorSpecification": 1,
+"name": "ip-whois-inspector",
+"title": "IP WHOIS Inspector 🕵️‍♂️",
+"description": "Performs WHOIS lookups for a list of IP addresses to find ISP, network, and location data.",
+"version": "0.1.0",
+"meta": {
+"templateId": "python-blank",
+"model": "gemini-1.5-pro"
+},
+"storages": {
+"dataset": "./dataset_schema.json"
+}
+}

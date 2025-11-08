@@ -1,0 +1,29 @@
+{
+  "actorSpecification": 1,
+  "name": "ai-luxury-lifestyle-summarizer",
+  "title": "💎 Luxury & Lifestyle News Intelligence Pipeline",
+  "description": "This Apify Actor processes news from top Luxury and High-End Lifestyle feeds and transforms headlines into structured, actionable intelligence using free web search and combined Language Model (LLM) analysis.",
+  "version": "0.3", 
+  "dockerfile": "./Dockerfile",
+  "entrypoint": "python -m src.main",
+  "input": "./INPUT_SCHEMA.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "buildTag": "latest",
+  "actorRunInputExample": { 
+    "source": "all",
+    "maxArticles": 10,
+    "region": "wt-wt",
+    "timeLimit": "w",
+    "runTestMode": false
+  },
+  "authors": [
+    {
+      "name": "bySeitz",
+      "url": "https://www.visita.co.za"
+    }
+  ],
+  "categories": ["News", "Luxury", "Lifestyle", "Fashion", "Automotive", "Travel", "AI", "Analytics"],
+  "isPublic": true
+}

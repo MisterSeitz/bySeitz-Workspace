@@ -1,0 +1,112 @@
+{
+  "title": "NewsData.io Aggregator Config",
+  "description": "Configuration for fetching and summarizing news articles from NewsData.io about oppression, injustice, corruption, and other social issues.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "keywords": {
+      "title": "Keywords",
+      "type": "string",
+      "editor": "textfield",
+      "default": "oppression, injustice, corruption",
+      "description": "Comma-separated list of keywords to search for (e.g., oppression, injustice, corruption)."
+    },
+    "category": {
+      "title": "Category",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "business", "crime", "education", "entertainment",
+        "health", "science", "sports", "technology", "world"
+      ],
+      "enumTitles": [
+        "Business", "Crime", "Education", "Entertainment",
+        "Health", "Science", "Sports", "Technology", "World"
+      ],
+      "default": "world",
+      "description": "Category of news to filter by."
+    },
+    "country": {
+      "title": "Country",
+      "type": "string",
+      "editor": "select",
+      "enum": ["wo", "za", "ng", "so", "sd", "rw", "us"],
+      "enumTitles": [
+        "World", "South Africa", "Nigeria",
+        "Somalia", "Sudan", "Rwanda", "United States"
+      ],
+      "default": "wo",
+      "description": "Two-letter country code for localized news results."
+    },
+    "language": {
+      "title": "Language",
+      "type": "string",
+      "editor": "select",
+      "enum": ["en", "af", "zu"],
+      "enumTitles": ["English", "Afrikaans", "Zulu"],
+      "default": "en",
+      "description": "Language code of the articles to fetch."
+    },
+    "domainOption": {
+      "title": "Source Domain Option",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "popular", "news24.com", "rt.com/rss", "iol.co.za",
+        "citizen.co.za", "ewn.co.za", "sabcnews.com/sabc",
+        "businesstech.co.za", "timeslive.co.za", "sowetanlive.co.za",
+        "dailymaverick.co.za", "custom"
+      ],
+      "enumTitles": [
+        "Popular", "News24", "RT", "IOL", "Citizen", "EWN", "SABC News",
+        "BusinessTech", "TimesLIVE", "SowetanLIVE", "Daily Maverick", "Custom"
+      ],
+      "default": "popular",
+      "description": "Choose a domain list or provide a custom domain."
+    },
+    "customDomain": {
+      "title": "Custom Domain URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "If 'custom' is selected above, enter a specific domain (e.g., bbc.com, news24.com)."
+    },
+    "priorityDomain": {
+      "title": "Priority Domain",
+      "type": "string",
+      "editor": "select",
+      "enum": ["top", "medium", "low"],
+      "enumTitles": ["Top", "Medium", "Low"],
+      "default": "top",
+      "description": "Select priority level for domain filtering: Top (10%), Medium (20%), or Low (50%)."
+    },
+    "useOpenAI": {
+      "title": "Use OpenAI Summarization",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": false,
+      "description": "Enable summarization via OpenAI (may incur cost)."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles to Fetch",
+      "type": "integer",
+      "editor": "number",
+      "default": 10,
+      "description": "Limit number of articles fetched per run."
+    },
+    "debugMode": {
+      "title": "Debug Mode",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": false,
+      "description": "If enabled, the actor will save raw API responses to the key-value store for inspection and debugging."
+    },
+    "enablePaidTier": {
+      "title": "Enable Paid Tier (Bypass 200 daily request limit)",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": false,
+      "description": "If enabled, the actor will continue making API requests after the 200 free daily limit is reached. This assumes you have a paid NewsData.io plan."
+    }
+  },
+  "required": ["keywords", "category", "country", "language"]
+}

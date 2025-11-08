@@ -1,0 +1,14 @@
+{
+"actorSpecification": 1,
+"name": "domain-inspector",
+"title": "Domain Inspector 🕵️‍♂️",
+"description": "Performs DNS, WHOIS, HTTP, and SSL checks for one or more domains to fetch a complete technical profile.",
+"version": "0.1.0",
+"meta": {
+"templateId": "python-blank",
+"model": "gemini-1.5-pro"
+},
+"storages": {
+"dataset": "./dataset_schema.json"
+}
+}

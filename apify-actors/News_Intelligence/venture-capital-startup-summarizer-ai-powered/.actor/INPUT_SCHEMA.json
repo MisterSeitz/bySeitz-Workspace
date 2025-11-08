@@ -1,0 +1,56 @@
+{
+  "title": "💸 Venture Capital Intelligence Pipeline",
+  "description": "Fetch and analyze news from top Venture Capital and Tech funding sources using a reliable two-stage AI analysis pipeline.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "source": {
+      "title": "News Source",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "all",
+        "techcrunch",
+        "crunchbase",
+        "forbes-vc",
+        "custom"
+      ],
+      "enumTitles": [
+        "🌍 All VC Sources",
+        "TechCrunch",
+        "Crunchbase News",
+        "Forbes (Venture Capital)",
+        "🧩 Custom URL"
+      ],
+      "default": "all",
+      "description": "Select the Venture Capital news feed to collect from."
+    },
+    "customFeedUrl": {
+      "title": "Custom RSS Feed URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Provide a custom RSS feed URL (if 'Custom' selected)."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles",
+      "type": "integer",
+      "editor": "number",
+      "description": "Provide a maximum number of articles to fetch",
+      "default": 20
+    },
+    "useSummarization": {
+      "title": "Use AI Summarization (Extra Cost 💸)",
+      "type": "boolean",
+      "editor": "checkbox",
+      "description": "This is now redundant since the pipeline uses Google AI Overview (Pay Point 1) and LLM Analysis (Pay Point 2) for all articles.",
+      "default": true
+    },
+    "runTestMode": {
+      "title": "Admin Test Mode (Bypasses Google Actor/Costs)",
+      "type": "boolean",
+      "description": "Setting this to true bypasses the Apify Google Search Results Actor, returning dummy data to allow for free testing of the LLM analysis and workflow. **DO NOT ENABLE IN PRODUCTION.**",
+      "default": false
+    }
+  },
+  "required": ["source"]
+}

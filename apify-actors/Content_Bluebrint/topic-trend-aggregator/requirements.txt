@@ -1,0 +1,8 @@
+apify
+apify-client
+pandas
+numpy
+aiohttp
+python-dateutil
+pytrends
+tldextract

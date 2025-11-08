@@ -1,0 +1,8 @@
+{
+  "actorSpecification": 1,
+  "name": "markdown-table-generator",
+  "version": "0.1",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}

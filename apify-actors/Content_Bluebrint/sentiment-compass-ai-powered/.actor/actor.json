@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "sentiment-compass-ai-powered",
+  "title": "Sentiment Compass AI 🧭",
+  "description": "Performs deep sentiment and emotional analysis on trend clusters, including calculating overall sentiment and specific sentiment for key mentioned entities.",
+  "version": "2.0.0",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "python-start"
+  },
+  "input": "./input_schema.json",
+  "dockerfile": "./Dockerfile",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "readme": "./README.md"
+}

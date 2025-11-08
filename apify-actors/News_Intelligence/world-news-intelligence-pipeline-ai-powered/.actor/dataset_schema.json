@@ -1,0 +1,39 @@
+{
+  "title": "World News Summarization Results",
+  "description": "Output records containing collected articles, their initial RSS summary, and an AI-generated summary (if available). Records are always pushed, even if content extraction fails.",
+  "type": "object",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "source": {
+        "type": "string",
+        "description": "The name of the news source (e.g., 'NYT > Top Stories', 'BBC')."
+      },
+      "title": {
+        "type": "string",
+        "description": "The title of the news article."
+      },
+      "url": {
+        "type": "string",
+        "format": "url",
+        "description": "The URL of the original article."
+      },
+      "published": {
+        "type": ["string", "null"],
+        "description": "The publication date/time string from the RSS feed."
+      },
+      "content": {
+        "type": "string",
+        "description": "The full, extracted content of the article. This will contain a placeholder message if extraction failed or the URL was filtered."
+      },
+      "summary": {
+        "type": "string",
+        "description": "The final summary. This is either the AI-generated summary, the original RSS feed summary, or a fallback message if all summarization/extraction failed."
+      }
+    },
+    "required": [
+      "title",
+      "url"
+    ]
+  }
+}

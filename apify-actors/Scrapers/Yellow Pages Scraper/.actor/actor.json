@@ -1,0 +1,16 @@
+{
+  "actorSpecification": 1,
+  "name": "yellow-pages-scraper",
+  "title": "Yellow Pages Scraper",
+  "version": "0.2.0",
+  "buildTag": "latest",
+  "minMemoryMbytes": 512,
+  "maxMemoryMbytes": 4096,
+  "defaultRunOptions": {
+    "timeoutSecs": 1800,
+    "build": "latest"
+  },
+  "dockerfile": "Dockerfile",
+  "readme": "README.md",
+  "input": "input_schema.json"
+}

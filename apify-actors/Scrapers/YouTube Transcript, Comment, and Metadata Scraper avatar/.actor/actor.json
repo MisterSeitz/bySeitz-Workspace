@@ -1,0 +1,23 @@
+{
+  "actorSpecification": 1,
+  "name": "youtube-transcript-scraper",
+  "title": "YouTube Transcript Scraper",
+  "description": "Scrapes YouTube transcripts and metadata via Playwright.",
+  "version": "1.0.0",
+  "builds": [
+    {
+      "use": "playwright-chromium"
+    }
+  ],
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 600,
+    "memoryMbytes": 2048,
+    "runCommand": "npm start"
+  },
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "readme": "./README.md"
+}

@@ -1,0 +1,29 @@
+{
+  "actorSpecification": 1,
+  "title": "Sentiment Compass Output Schema",
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Sentiment Overview",
+      "transformation": {
+        "fields": [
+          "cluster_topic",
+          "average_sentiment",
+          "volatility_score",
+          "recommended_tone",
+          "entity_sentiments"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "cluster_topic": { "label": "Topic", "format": "text" },
+          "average_sentiment": { "label": "Overall Sentiment", "format": "text" },
+          "volatility_score": { "label": "Volatility", "format": "number" },
+          "recommended_tone": { "label": "Recommended Tone", "format": "text" },
+          "entity_sentiments": { "label": "Entity Sentiments", "format": "json" }
+        }
+      }
+    }
+  }
+}

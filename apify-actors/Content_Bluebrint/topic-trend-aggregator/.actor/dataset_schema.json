@@ -1,0 +1,37 @@
+{
+  "actorSpecification": 1,
+  "title": "Topic Trend Aggregator Output Schema",
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Trends Overview",
+      "transformation": {
+        "fields": [
+          "cluster_topic",
+          "trend_score",
+          "articles_count",
+          "google_trend_score",
+          "mentioned_locations",
+          "mentioned_people",
+          "mentioned_organizations",
+          "mentioned_products",
+          "mentioned_events"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "cluster_topic": { "label": "Trend Topic", "format": "text" },
+          "trend_score": { "label": "Trend Score", "format": "number" },
+          "articles_count": { "label": "Article Count", "format": "number" },
+          "google_trend_score": { "label": "Google Score", "format": "number" },
+          "mentioned_locations": { "label": "Locations", "format": "json" },
+          "mentioned_people": { "label": "People", "format": "json" },
+          "mentioned_organizations": { "label": "Organizations", "format": "json" },
+          "mentioned_products": { "label": "Products", "format": "json" },
+          "mentioned_events": { "label": "Events", "format": "json" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "run_id": {
+        "type": "string",
+        "description": "The unique identifier for this orchestration run."
+      },
+      "status": {
+        "type": "string",
+        "description": "The final status of the run (e.g., Completed, Failed)."
+      },
+      "pipelines_used": {
+        "type": "array",
+        "description": "A list of the source pipelines that were processed.",
+        "items": {
+          "type": "string"
+        }
+      },
+      "topics_found": {
+        "type": "integer",
+        "description": "The total number of unique topics identified and aggregated."
+      },
+      "content_items_generated": {
+        "type": "integer",
+        "description": "The total number of content ideas generated across all formats."
+      },
+      "average_trend_score": {
+        "type": "number",
+        "description": "The average trend score across all processed topics."
+      },
+      "average_sentiment": {
+        "type": "string",
+        "description": "The average sentiment calculated across all topics."
+      },
+      "datasets": {
+        "type": "object",
+        "description": "Links to the final output datasets from each stage.",
+        "properties": {
+          "aggregator": {
+            "type": "string",
+            "format": "uri"
+          },
+          "keyword_opportunity": {
+            "type": "string",
+            "format": "uri"
+          },
+          "sentiment_intel": {
+            "type": "string",
+            "format": "uri"
+          },
+          "content_idea_generator": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  },
+  "views": {
+    "summary_view": {
+      "title": "Run Summary",
+      "transformation": {
+        "flatten": [
+          "datasets"
+        ],
+        "fields": [
+          "run_id",
+          "status",
+          "topics_found",
+          "content_items_generated",
+          "average_trend_score",
+          "average_sentiment",
+          "pipelines_used",
+          "datasets.aggregator",
+          "datasets.keyword_opportunity",
+          "datasets.sentiment_intel",
+          "datasets.content_idea_generator"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "run_id": {
+            "label": "Run ID",
+            "format": "text"
+          },
+          "status": {
+            "label": "Status",
+            "format": "text"
+          },
+          "topics_found": {
+            "label": "Topics Found",
+            "format": "number"
+          },
+          "content_items_generated": {
+            "label": "Content Items",
+            "format": "number"
+          },
+          "average_trend_score": {
+            "label": "Avg. Trend Score",
+            "format": "number"
+          },
+          "average_sentiment": {
+            "label": "Avg. Sentiment",
+            "format": "text"
+          },
+          "pipelines_used": {
+            "label": "Pipelines Used",
+            "format": "array"
+          },
+          "datasets.aggregator": {
+            "label": "Aggregator Output",
+            "format": "link"
+          },
+          "datasets.keyword_opportunity": {
+            "label": "Keywords Output",
+            "format": "link"
+          },
+          "datasets.sentiment_intel": {
+            "label": "Sentiment Output",
+            "format": "link"
+          },
+          "datasets.content_idea_generator": {
+            "label": "Content Ideas Output",
+            "format": "link"
+          }
+        }
+      }
+    }
+  }
+}

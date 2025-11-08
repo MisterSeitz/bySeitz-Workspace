@@ -1,0 +1,50 @@
+{
+  "title": "📰 GDELT Data Enrichment Pipeline",
+  "description": "Scrape raw GDELT articles based on a query and enrich them using Google Search and OpenAI for summary, sentiment, and entity extraction.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "query": {
+      "title": "GDELT Search Query (Mandatory)",
+      "type": "string",
+      "description": "The GDELT query string (e.g., '\"stock market\" OR theme:ECON_BUSINESS'). Use capitalized boolean operators.",
+      "editor": "textfield",
+      "default": "\"Global Economy\" OR theme:ECON_BUSINESS",
+      "sectionCaption": "1. GDELT Source & Query Settings"
+    },
+    "max_records_limit": {
+      "title": "Max GDELT Articles to Retrieve",
+      "type": "integer",
+      "description": "The maximum number of articles/records to retrieve from GDELT (Max 250).",
+      "default": 100,
+      "editor": "number",
+      "maximum": 250
+    },
+    "timespan_offset": {
+      "title": "Time Range (Relative or Absolute)",
+      "type": "string",
+      "description": "Specify a time span back from the present (e.g., '3days', '1week') or an absolute date range.",
+      "editor": "datepicker",
+      "dateType": "absoluteOrRelative",
+      "default": "3 days"
+    },
+    "sort_by": {
+      "title": "Sort Results By",
+      "type": "string",
+      "description": "The field to sort results by.",
+      "editor": "select",
+      "default": "HybridRel",
+      "enum": ["HybridRel", "DateDesc", "DateAsc", "ToneDesc", "ToneAsc"],
+      "enumTitles": ["Relevance (HybridRel)", "Date (Newest First)", "Date (Oldest First)", "Tone (Most Positive)", "Tone (Most Negative)"]
+    },
+    "source_lang": {
+      "title": "Source Language Filter (Optional)",
+      "type": "string",
+      "description": "Filter results to articles originally published in a specific language (e.g., 'english' or 'EN').",
+      "editor": "textfield"
+    }
+  },
+  "required": [
+    "query"
+  ]
+}

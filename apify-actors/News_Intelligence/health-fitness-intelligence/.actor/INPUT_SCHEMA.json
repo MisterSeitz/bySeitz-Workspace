@@ -1,0 +1,158 @@
+{
+  "title": "🥗 Health & Fitness Intelligence Pipeline",
+  "description": "Fetch and analyze news from top Health, Fitness, and Nutrition sources using a reliable two-stage AI analysis pipeline.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "source": {
+      "title": "News Source",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "all",
+        "mens-health",
+        "myfitnesspal",
+        "born-fitness",
+        "trainerize",
+        "wod-guru",
+        "breaking-muscle",
+        "fitnessista",
+        "anytime-fitness",
+        "nasm",
+        "girls-gone-strong",
+        "popsugar-fitness",
+        "the-fit-bits",
+        "precision-nutrition",
+        "bites-of-wellness",
+        "eating-bird-food",
+        "nutrition-stripped",
+        "oh-she-glows",
+        "nutritionfacts",
+        "delish-knowledge",
+        "real-food-dietitians",
+        "fit-foodie-finds",
+        "toby-amidor-nutrition",
+        "pbfingers",
+        "the-healthy-maven",
+        "nutrition-twins",
+        "the-full-helping",
+        "the-fit-foodie",
+        "fit-bottomed-girls",
+        "art-of-healthy-living",
+        "shape",
+        "health",
+        "healthshots",
+        "mommypotamus",
+        "natural-living-ideas",
+        "a-healthy-slice-of-life",
+        "unlikely-martha",
+        "athletechnews",
+        "health-club-management",
+        "club-solutions",
+        "total-health-and-fitness",
+        "core-handf",
+        "custom"
+      ],
+      "enumTitles": [
+        "🌍 All Health & Fitness Sources",
+        "--- General Fitness & Training ---",
+        "Men's Health",
+        "MyFitnessPal Blog",
+        "Born Fitness",
+        "Trainerize Blog",
+        "WOD Guru",
+        "Breaking Muscle",
+        "Fitnessista",
+        "Anytime Fitness",
+        "NASM Blog",
+        "Girls Gone Strong",
+        "POPSUGAR Fitness",
+        "The Fit Bits",
+        "--- Nutrition & Healthy Eating ---",
+        "Precision Nutrition",
+        "Bites of Wellness",
+        "Eating Bird Food",
+        "Nutrition Stripped",
+        "Oh She Glows",
+        "NutritionFacts.org",
+        "Delish Knowledge",
+        "The Real Food Dietitians",
+        "Fit Foodie Finds",
+        "Toby Amidor Nutrition",
+        "Peanut Butter Fingers",
+        "The Healthy Maven",
+        "Nutrition Twins",
+        "The Full Helping",
+        "The Fit Foodie",
+        "--- Holistic Wellness & Lifestyle ---",
+        "Fit Bottomed Girls",
+        "Art of Healthy Living",
+        "Shape",
+        "Health.com",
+        "Healthshots",
+        "Mommypotamus",
+        "Natural Living Ideas",
+        "A Healthy Slice of Life",
+        "Unlikely Martha",
+        "--- Fitness Business & Tech ---",
+        "Athletechnews",
+        "Health Club Management",
+        "Club Solutions Magazine",
+        "Total Health and Fitness",
+        "Core Health & Fitness",
+        "🧩 Custom URL"
+      ],
+      "default": "all",
+      "description": "Select the news feed to collect from.",
+      "sectionCaption": "Data Source Settings"
+    },
+    "customFeedUrl": {
+      "title": "Custom RSS Feed URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Provide a custom RSS feed URL (if 'Custom' selected)."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles",
+      "type": "integer",
+      "editor": "number",
+      "description": "Provide a maximum number of articles to fetch",
+      "default": 20
+    },
+    "region": {
+      "title": "Search Region (DuckDuckGo)",
+      "type": "string",
+      "editor": "select",
+      "description": "Region to limit search results by (e.g., 'us-en' for US, 'wt-wt' for World).",
+      "default": "wt-wt",
+      "enum": [
+        "wt-wt", "us-en", "uk-en", "au-en", "de-de", "fr-fr"
+      ],
+      "enumTitles": [
+        "World (Default)", "US (English)", "UK (English)", "Australia (English)", "Germany (German)", "France (French)"
+      ]
+    },
+    "timeLimit": {
+      "title": "Time Limit (DuckDuckGo)",
+      "type": "string",
+      "editor": "select",
+      "description": "Limit search results by time.",
+      "default": "w",
+      "enum": [
+        "any", "d", "w", "m"
+      ],
+      "enumTitles": [
+        "Any Time", "Past Day", "Past Week", "Past Month"
+      ]
+    },
+    "runTestMode": {
+      "title": "Admin Test Mode (Bypasses ALL External API Costs)",
+      "type": "boolean",
+      "description": "Setting this to true bypasses external API calls for zero-cost testing. **DO NOT ENABLE IN PRODUCTION.**",
+      "default": false
+    }
+  },
+  "required": [
+    "source"
+  ]
+}

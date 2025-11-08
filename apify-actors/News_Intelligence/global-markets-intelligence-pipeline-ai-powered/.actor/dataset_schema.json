@@ -1,0 +1,35 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "overview": {
+      "title": "Market Intelligence Results",
+      "transformation": {
+        "fields": [
+          "published",
+          "source",
+          "title",
+          "url",
+          "sentiment",
+          "category",
+          "key_entities",
+          "gdelt_tone",
+          "summary"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "published": { "label": "Published", "format": "date" },
+          "source": { "label": "Source", "format": "text" },
+          "title": { "label": "Title", "format": "text" },
+          "url": { "label": "Link", "format": "link" },
+          "sentiment": { "label": "Sentiment", "format": "text" },
+          "category": { "label": "Category", "format": "text" },
+          "key_entities": { "label": "Key Entities", "format": "array" },
+          "gdelt_tone": { "label": "Score", "format": "number" },
+          "summary": { "label": "Summary", "format": "text" }
+        }
+      }
+    }
+  }
+}

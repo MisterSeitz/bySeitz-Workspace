@@ -1,0 +1,136 @@
+{
+  "title": "⛓️ Web3 & Decentralized Tech Intelligence Pipeline",
+  "description": "Fetch and analyze news from top Web3, Crypto, and Decentralized Technology sources using a reliable two-stage AI analysis pipeline.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "source": {
+      "title": "News Source",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "all",
+        "aws_web3",
+        "web3labs",
+        "hackernoon",
+        "blockchainsolutions",
+        "thedefiant",
+        "coindesk",
+        "ethereum",
+        "decrypt",
+        "messari",
+        "cointelegraph",
+        "unchainedcrypto",
+        "chainlink",
+        "cryptoslate",
+        "bitcoinmagazine",
+        "zerohedge",
+        "blockonomi",
+        "metamask",
+        "yearn_finance",
+        "axie_infinity",
+        "tekrevol",
+        "futuramo",
+        "custom"
+      ],
+      "enumTitles": [
+        "🌍 All Web3/Crypto Sources",
+        "AWS Web3 Blog",
+        "Web3 Labs Blog",
+        "Hackernoon",
+        "Blockchain Solutions",
+        "The Defiant",
+        "CoinDesk",
+        "Ethereum Blog",
+        "Decrypt",
+        "Messari",
+        "Cointelegraph",
+        "Unchained Crypto",
+        "Chainlink Blog",
+        "CryptoSlate",
+        "Bitcoin Magazine",
+        "Zero Hedge (Full RSS)",
+        "Blockonomi",
+        "MetaMask News",
+        "Yearn Finance Blog",
+        "Axie Infinity Blog",
+        "TekRevol (Blockchain)",
+        "Futuramo (Decentralized Tech)",
+        "🧩 Custom URL"
+      ],
+      "default": "all",
+      "description": "Select the news feed to collect from.",
+      "sectionCaption": "Data Source Settings"
+    },
+    "customFeedUrl": {
+      "title": "Custom RSS Feed URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Provide a custom RSS feed URL (if 'Custom' selected)."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles",
+      "type": "integer",
+      "editor": "number",
+      "description": "Provide a maximum number of articles to fetch",
+      "default": 10
+    },
+    "region": {
+      "title": "Search Region",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "wt-wt",
+        "us-en",
+        "uk-en",
+        "za-en",
+        "au-en",
+        "ca-en",
+        "de-de",
+        "fr-fr"
+      ],
+      "enumTitles": [
+        "Any Region",
+        "United States (English)",
+        "United Kingdom (English)",
+        "South Africa (English)",
+        "Australia (English)",
+        "Canada (English)",
+        "Germany (German)",
+        "France (French)"
+      ],
+      "default": "wt-wt",
+      "description": "Select the region for DuckDuckGo news search results.",
+      "sectionCaption": "Search Filter Settings"
+    },
+    "timeLimit": {
+      "title": "Time Limit",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "any",
+        "d",
+        "w",
+        "m"
+      ],
+      "enumTitles": [
+        "Any Time",
+        "Past Day",
+        "Past Week",
+        "Past Month"
+      ],
+      "default": "w",
+      "description": "Filter search results by time period."
+    },
+    "runTestMode": {
+      "title": "Admin Test Mode (Bypasses ALL External API Costs)",
+      "type": "boolean",
+      "description": "Setting this to true bypasses external API calls for zero-cost testing. **Do not enable in production.**",
+      "default": false,
+      "sectionCaption": "Debugging"
+    }
+  },
+  "required": [
+    "source"
+  ]
+}

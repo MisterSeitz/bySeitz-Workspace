@@ -1,0 +1,27 @@
+{
+  "actorSpecification": 1,
+  "name": "social-media-news-summarizer",
+  "title": "📈 Social Media & Influencer Marketing Pipeline",
+  "description": "This Apify Actor processes Social Media & Influencer Marketing news from major RSS feeds and transforms headlines into structured, actionable intelligence using AI-powered summarization and analysis.",
+  "version": "0.1",
+  "dockerfile": "./Dockerfile",
+  "entrypoint": "python -m src.main",
+  "input": "./INPUT_SCHEMA.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "buildTag": "latest",
+  "actorRunInputExample": {
+    "source": "all",
+    "maxArticles": 20,
+    "runTestMode": false
+  },
+  "authors": [
+    {
+      "name": "bySeitz",
+      "url": "https://www.visita.co.za"
+    }
+  ],
+  "categories": ["News", "Social Media", "Marketing", "RSS", "AI", "Analytics"],
+  "isPublic": true
+}

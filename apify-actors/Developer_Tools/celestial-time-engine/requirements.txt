@@ -1,0 +1,25 @@
+# Core Apify + location/time tools
+apify
+geopy
+timezonefinder
+pytz
+astral
+
+# Networking
+requests
+
+# Astronomy + ephemeris (planets, eclipses)
+skyfield
+
+# Date/time utilities
+python-dateutil
+
+# Optional cultural/religious calendars
+lunardate
+swisseph
+
+# Geomagnetic declination
+geomag
+
+# Logging utilities (optional)
+rich

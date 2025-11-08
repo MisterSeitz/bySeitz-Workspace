@@ -1,0 +1,5 @@
+apify < 4.0.0
+ipwhois
+dnspython
+geoip2
+requests

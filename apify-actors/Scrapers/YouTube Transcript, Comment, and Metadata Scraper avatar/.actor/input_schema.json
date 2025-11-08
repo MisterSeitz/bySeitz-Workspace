@@ -1,0 +1,80 @@
+{
+  "title": "YouTube Transcript Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "runMode": {
+      "title": "Run Mode",
+      "type": "string",
+      "enum": ["discover", "scrape"],
+      "enumTitles": ["🔎 Discover new videos", "✍️ Scrape known video URLs"],
+      "default": "discover",
+      "description": "Choose whether to discover videos by search or scrape specific video URLs."
+    },
+    "discoverConfig": {
+      "title": "Discover Mode Settings",
+      "type": "object",
+      "editor": "schemaBased",
+      "description": "Settings used when discovering videos via YouTube search.",
+      "properties": {
+        "searchQueries": {
+          "title": "🔍 Search Queries",
+          "type": "array",
+          "editor": "stringList",
+          "prefill": ["rugby highlights"],
+          "description": "List of search terms to find videos on YouTube."
+        },
+        "searchCategory": {
+          "title": "🏷️ Append Category",
+          "type": "string",
+          "enum": ["", "News", "Sport", "Music", "Gaming", "Education"],
+          "default": "Sport",
+          "description": "Optional category keyword to append to the search query."
+        },
+        "uploadDate": {
+          "title": "📅 Upload Date",
+          "type": "string",
+          "enum": ["", "Hour", "Today", "This week", "This month", "This year"],
+          "default": "",
+          "description": "Filter videos by upload date."
+        },
+        "videoDuration": {
+          "title": "⏱️ Duration",
+          "type": "string",
+          "enum": ["", "Short (<4 mins)", "Medium (4–20 mins)", "Long (>20 mins)"],
+          "default": "",
+          "description": "Filter videos by approximate duration."
+        },
+        "maxResultsPerQuery": {
+          "title": "📊 Video Limit",
+          "type": "integer",
+          "default": 5,
+          "description": "Maximum number of videos to collect per search query."
+        }
+      }
+    },
+    "scrapeConfig": {
+      "title": "Scrape Mode Settings",
+      "type": "object",
+      "editor": "schemaBased",
+      "description": "Settings used when scraping known YouTube videos directly.",
+      "properties": {
+        "videoIDs": {
+          "title": "📹 YouTube Video IDs",
+          "type": "array",
+          "editor": "stringList",
+          "prefill": ["xZCbAki4puY"],
+          "description": "Provide specific YouTube video IDs to scrape directly."
+        }
+      }
+    },
+    "lang": {
+      "title": "🗣️ Transcript Language",
+      "type": "string",
+      "editor": "textfield",
+      "default": "en",
+      "description": "Preferred language code for transcript extraction (e.g. en, fr, es)."
+    }
+  },
+  "required": ["runMode"]
+}

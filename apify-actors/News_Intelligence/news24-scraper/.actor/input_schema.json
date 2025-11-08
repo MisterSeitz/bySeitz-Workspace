@@ -1,0 +1,64 @@
+{
+  "title": "News24 Scraper Input",
+  "description": "Select the News24 categories you want to scrape.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "start_urls": {
+      "title": "Categories",
+      "type": "array",
+      "description": "Select one or more categories to start scraping from.",
+      "editor": "select",
+      "default": [
+        "https://www.news24.com/world"
+      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "https://www.news24.com/world",
+          "https://www.news24.com/world/africa/",
+          "https://www.news24.com/southafrica/",
+          "https://www.news24.com/sport",
+          "https://www.news24.com/life/",
+          "https://www.news24.com/business/climate-future/",
+          "https://www.news24.com/specialreports/",
+          "https://www.news24.com/opinions/",
+          "https://www.news24.com/business/",
+          "https://www.news24.com/politics/"
+        ],
+        "enumTitles": [
+          "World",
+          "Africa",
+          "South Africa",
+          "Sport",
+          "Life",
+          "Climate Future",
+          "Special Reports",
+          "Opinions",
+          "Business",
+          "Politics"
+        ]
+      }
+    },
+    "concurrency": {
+      "title": "Concurrency",
+      "type": "integer",
+      "description": "Number of articles to scrape in parallel. Higher values speed up scraping but use more resources.",
+      "minimum": 1,
+      "maximum": 10,
+      "default": 3
+    },
+    "proxyConfiguration": {
+      "title": "Proxy configuration",
+      "type": "object",
+      "description": "Select 'Apify Proxy' and choose a country. South Africa is the default.",
+      "editor": "proxy",
+      "default": {
+        "useApifyProxy": true,
+        "apifyProxyGroups": ["RESIDENTIAL"],
+        "apifyProxyCountry": "ZA"
+      }
+    }
+  },
+  "required": ["start_urls"]
+}

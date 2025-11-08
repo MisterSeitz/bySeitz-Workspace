@@ -1,0 +1,1549 @@
+# Image Shopping List
+# Found 1545 categories missing an 'Image' URL.
+# Find images for these, upload to WP Media, get URLs, and add to the CSV.
+
+01. Accommodation
+02. Food & Beverage
+Butcher shop
+Cafés & Bakeries
+Cafeteria
+Cupcake Shop
+Donut Shop
+Espresso Bar
+Pastry Shop
+Pie Shop
+Catering & Food Services
+Wedding Buffet
+03. Retail & Shops
+04. Health & Wellness
+Alternative & Holistic Medicine
+Chinese Medicine Clinic
+Hypnotherapy Service
+Kinesiologist
+Naturopathic Practitioner
+Reflexologist
+05. Automotive & Transport
+06. Finance & Legal
+07. Home & Local Services
+08. Education & Training
+09. Arts, Media & Events
+10. Professional Services
+Bunkering Services
+Fuel Quality Testing
+Lubricant Supply
+Marine Fuel Supply
+Offshore Refueling
+Business Services
+Business Administration Service
+Consulting & Advisory
+Real Estate Consultant
+Pr Agency
+11. NGOs/Social Enterprises
+Adult & Continuing Education
+Adult education school
+Adventure sports center
+Aerial sports center
+African restaurant
+Aged care
+Agricultural production
+Agricultural service
+Alliance church
+Amusement park
+Amusement park ride
+Anglican church
+Antique store
+Apartment building
+Apartment complex
+Apostolic church
+Artist
+Arts organization
+Assemblies of God church
+Association / Organization
+ATM
+Attractions & Activities
+Wildlife Parks & Sanctuaries
+Reptile Parks
+Auto parts store
+Auto repair shop
+Bakery
+Bank
+Baptist church
+Bar
+Bar & grill
+Barbecue restaurant
+Bed & breakfast
+Bed shop
+Beer garden
+Bird watching area
+Building Materials Market
+Building materials store
+Building materials supplier
+Bus stop
+Business administration service
+Business center
+Business park
+businesses-services
+Cafe
+Campground
+Camping & Rv Parks
+Camping Cabin
+Camping Farm
+Rv Park
+Camping farm
+Car dealer
+Car inspection station
+Car Racing Track
+Car wash
+Career Guidance Service
+Catering Services
+Catering
+Event Catering
+Mobile Caterer
+Wedding Catering
+Catholic cathedral
+Catholic church
+Catholic School
+Cell phone store
+Chapel
+Charity
+Chemistry Lab
+Children's Camp
+Children's Furniture Store
+Children's Hospital
+Children's library
+Children's Party Service
+Children's store
+Childrens Club
+Christian church
+Church
+Church of Christ
+Church of the Nazarene
+City government office
+City Hall
+City or town hall
+City park
+Civic center
+Civil Engineering & Infrastructure
+Airport Construction
+Air Traffic Control Tower Construction
+Runway Construction & Maintenance
+Terminal Building Construction
+Marine Construction
+Coastal Erosion Control
+Dock & Pier Construction
+Dredging Services
+Port & Harbor Development
+Rail & Mass Transit Construction
+Light Rail & Metro Systems
+Rail Station Construction
+Railway Infrastructure
+Road & Highway Construction
+Asphalt Paving
+Bridge Construction & Repair
+Road Maintenance & Rehabilitation
+Tunnel Construction
+Water & Sewerage Systems
+Pipeline Installation
+Sewage Treatment Facility Construction
+Stormwater Management Systems
+Water Treatment Plant Construction
+Cleaning products supplier
+Cleaning service
+Water Tank Cleaning Service
+Clothing store
+Club
+Coffee shop
+College
+Commercial Refrigeration
+Community center
+Community college
+Community Garden
+Community health center
+Community Health Centre
+Community Organisations
+Civic Centre
+Community Services
+Environmental Organisation
+Fundraising Organisation
+Public Library
+Senior Center
+Social Services Organisation
+Cultural Organisation
+Labor Union
+Places Of Worship
+Christian Church
+Hindu Temple
+Masajid
+Synagogue
+Religious Organisations
+Religious School
+Christian School
+Hindu School
+Jewish School
+Muslim School
+Computer training school
+Concert Hall
+Conservative synagogue
+Construction Services
+Commercial Contractors
+Educational Facility Construction (Schools, Universities)
+Healthcare Facility Construction (Hospitals, Clinics)
+Hospitality Construction (Hotels, Restaurants)
+Office Building Construction
+Retail & Shopping Center Construction
+Government & Institutional Contractors
+Infrastructure Development
+Military Facility Construction
+Public Works Projects
+Industrial Contractors
+Energy Facility Construction (Power Plants, Renewable Energy Installations)
+Factory & Plant Construction
+Mining Infrastructure Construction
+Warehouse Construction
+Residential Contractors
+Apartment & Condominium Construction
+Custom Home Builders
+Estate Development
+Home Renovations & Remodeling
+Residential Extensions & Additions
+Interior Construction Contractor
+Container Service
+Convenience store
+Copier Repair Service
+Corporate office
+Cosmetics & Skincare
+Beauty Products Supplier
+Cosmetics and Perfumes Supplier
+Makeup Services
+Permanent Make-up Clinic
+Permanent Makeup Clinic
+Council
+Country club
+Country House
+Cricket Ground
+Cultural center
+Cultural Events & Activities
+Cultural Centers
+Community Arts Center
+Cultural Center
+Heritage Center
+Festivals
+Cultural Festival
+Film Festival
+Food Festival
+Music Festival
+Workshops & Classes
+Art Classes
+Craft Workshops
+Dance Classes
+Music Lessons
+Cultural Institutions
+Art Galleries
+Art Gallery
+Contemporary Art Gallery
+Photography Gallery
+Museums
+Art Museum
+Children's Museum
+History Museum
+Science Museum
+Cycling park
+Dealerships
+Ford Dealer
+Forklift Dealer
+Hyundai Dealer
+Isuzu Dealer
+Jaguar Dealer
+Kia Dealer
+Land Rover Dealer
+Mazda Dealer
+Mercedes-benz Dealer
+Motorcycle Dealer
+Motorcycle Shop
+Nissan Dealer
+Race Car Dealer
+Renault Dealer
+Rv Dealer
+Suzuki Dealer
+Tractor Dealer
+Trailer Dealer
+Truck Dealer
+Used Truck Dealer
+Volkswagen Dealer
+Volvo Dealer
+Decor & Supplies
+Balloon Artist
+Event Decorator
+Furniture Rental Service
+Lighting Supplier
+Dental
+Dental Services
+Dental Laboratory
+Dental Radiology
+Dental Supply Store
+Denture Care Center
+Pediatric Dentist
+Department of housing
+Department of motor vehicles
+Department of Social Services
+Department store
+Design & Architecture
+Architectural Designer
+Draughtsman
+Interior Designers
+Landscape Architects
+Design & Digital Services
+Digital Marketing Agency
+Seo Services
+Social Media Management
+Web Designer
+Design Engineer
+Dessert & Specialty Shops
+Juice Shop
+Diamond Dealer
+Disability Services and Support Organisation
+Discount store
+District Justice
+District Municipality
+District Office
+Diving & Salvage Operations
+Emergency Response
+Salvage Services
+Underwater Inspections
+Wreck Removal
+Doctor
+Dog park
+Donations center
+Driver and Vehicle Licensing Agency
+Driver's License Office
+Dry cleaner
+Early Childhood Education
+Child Care Agency
+Ecological park
+Education
+Educational consultant
+Educational institution
+Educational Supply Store
+Educational Support Services
+Educational Consultant
+Electric Motor Repair Shop
+Electric Utility Company
+Electrical Repair Shop
+Employment agency
+Employment Services
+Employment Consultant
+Energy & Utilities
+Green Energy Supplier
+Engineering Services
+Building Consultant
+Drafting Service
+English language school
+Entertainment agency
+Entertainment Complexes
+Entertainment Services
+DJ Service
+Entertainer
+Live Music Band
+Magician
+Photobooth Rental
+Entertainment Venues
+Amusement & Theme Parks
+Adventure Parks
+Amusement Park
+Theme Parks
+Bowling & Billiards
+Bowling Alley
+Pool Hall
+Cinemas & Theaters
+IMAX Theater
+Movie Theater
+Gaming & Arcades
+Escape Room
+Video Arcade
+Environmental & Geotechnical Services
+Environmental Engineering
+Environmental Impact Assessments (EIA)
+Site Remediation & Cleanup
+Waste Management Solutions
+Geotechnical Engineering
+Foundation Engineering
+Slope Stability & Landslide Prevention
+Soil Testing & Analysis
+Renewable Energy Projects
+Bioenergy Facility Construction
+Wind Farm Construction
+Environmental consultant
+Environmental Services
+Ballast Water Treatment Services
+Emission Control Solutions
+Oil Spill Response
+Waste Management
+Equipment & Supplies
+Equipment Rental Agency
+Equipment Rentals
+Audio Visual Equipment Rental
+Party Equipment Rental Service
+Tent Rental Service
+Evangelical church
+Event planner
+Event Planning & Management
+Convention Center
+Corporate Entertainment Service
+Corporate Event Planner
+Meeting Planning Service
+Party Planner
+Wedding Planner
+Event venue
+Eye Care
+Optical Products Manufacturer
+Fabrication Engineer
+Family & Children's Activities
+Educational Recreation
+Aquarium
+Planetarium
+Science Center
+Family Entertainment Centers
+Indoor Playground
+Miniature Golf Course
+Zoo
+Farms & Ranches
+Dairy Farm
+Farm Equipment Repair Service
+Livestock Dealer
+Pig Farm
+Fashion accessories store
+Fashion designer
+Fast food restaurant
+Fax Service
+Federal government office
+Feed manufacturer
+Fertilizer supplier
+Festival hall
+Fiberglass Repair Service
+Figurine Shop
+Financial Services
+Bookkeeping Service
+Car Finance and Loan Company
+Certified Public Accountant
+Chartered Accountant
+Credit Counseling Service
+Currency Exchange Service
+Debt Collecting
+Finance Broker
+Insolvency Service
+Health Insurance Agency
+Income Protection Insurance Agency
+Investment Company
+Payroll Service
+Tax Consultant
+Tax Preparation Service
+Vault Storage Services
+Fire station
+Fitness center
+Fitness Centers & Gyms
+Boot Camp
+Fitness Instructors
+Golf Instructor
+Pilates Instructor
+Tennis Instructor
+Women's Personal Trainer
+Yoga Instructor
+Gymnastics Center
+Weightlifting Area
+Floor Sanding and Polishing Service
+Food & Drink Stores
+Bubble Tea Store
+Confectionery
+Cookie Shop
+Dessert Shop
+Food Store
+Organic Food Store
+Food and Beverage Consultant
+Food producer
+Food Trucks & Street Food
+Food Truck
+Street Food Vendor
+Football club
+Forensic Consultant
+Free clinic
+Fresh food market
+Friends church
+Fruit and vegetable processing
+Fruit and vegetable store
+Full Gospel church
+Funeral Home
+Furniture store
+Gadget Store
+Garden
+General education school
+General Medical Services
+Free Clinic
+General store
+Generator Shop
+Gift shop
+Glass & Mirror Shop
+Glass Repair Service
+Go-carting
+Golf Driving Range
+Gospel church
+Gourmet grocery store
+Government Offices
+City Courthouse
+County Government Office
+Department of Education
+Department Of Motor Vehicles
+Department of Public Safety
+Department of Transportation
+Federal Government Office
+Fire Station
+Local Government Office
+Municipal Administration Office
+Municipal Department Housing and Urban Development
+Provincial Government Office
+Regional Government Office
+Social Security Office
+Tax Department
+Grocery Delivery Service
+Grocery store
+Guest house
+Guest Houses & Inns
+Inn
+Guitar Instructor
+Gym
+Hair Care Services
+Barber Shops
+Barber Shop
+Men's Grooming
+Hair Extension Technician
+Hair Extensions Supplier
+Hair Removal Service
+Halfway House
+Hamburger restaurant
+Higher Education
+Christian College
+Community College
+Culinary School
+Distance Learning Center
+Engineering School
+Fashion Design School
+Graduate School
+Hospitality And Tourism School
+Management School
+Mathematics School
+Medical School
+Music School
+Public University
+Trade School
+Vocational College
+Hiking area
+Holiday home
+Holiday Park
+Holiday Rentals
+Vacation Home Rental Agency
+Villa
+Home And Construction
+Home Audio Store
+Home goods store
+Home Help Service Agency
+Home Improvement & Construction
+Home Improvement
+Curtains, Blinds & Shutters Supplier
+Remodeler
+Home Maintenance & Repair
+Curtains, Blinds & Shutters Installation
+Handyman Services
+Home Automation Company
+HVAC Contractors
+Commercial & Industrial HVAC
+HVAC Maintenance & Repair
+HVAC System Installation
+Plumbing Service
+Small Appliance Repair Service
+Washer & Dryer Repair Service
+Hookah Store
+Hospital Department
+Hospitality and tourism school
+Hostels
+Youth Hostel
+Hotel
+Hotels
+Extended Stay Hotel
+Wellness Hotel
+Housing Development
+Hunting preserve
+Hydraulic Engineer
+Hydraulic Repair Service
+Immigration & Naturalization Service
+Industrial Equipment & Supplies
+Bottled Water Supplier
+Building Equipment Hire Service
+Ceiling Supplier
+Coffee Machine Supplier
+Commercial Refrigerator Supplier
+Concrete Product Supplier
+Container Supplier
+Drilling Equipment Supplier
+Dry Ice Supplier
+Egg Supplier
+Electrical Equipment Supplier
+Electronic Parts Supplier
+Engineering Supplies
+Equipment Supplier
+Fastener Supplier
+Fertilizer Supplier
+Fiber Optic Products Supplier
+Fiberglass Supplier
+Fire Protection Equipment Supplier
+Fitted Furniture Supplier
+Foam Rubber Supplier
+Garage Door Supplier
+Garden Building Supplier
+Granite Supplier
+Heating Equipment Supplier
+Hose Supplier
+Household Chemicals Supplier
+Hydroponics Equipment Supplier
+Ice Supplier
+Industrial Chemicals Supplier
+Industrial Door Supplier
+Industrial Gas Supplier
+Industrial Vacuum Equipment Supplier
+Irrigation Equipment Supplier
+Janitorial Equipment Supplier
+Laboratory Equipment Supplier
+Laser Equipment Supplier
+Lawn Irrigation Equipment Supplier
+Leather Goods Supplier
+Machinery Supplier
+Material Handling Equipment Supplier
+Metal Supplier
+Mobility Equipment Supplier
+Molding Supplier
+Office Equipment Supplier
+Pallet Supplier
+Photocopiers Supplier
+Playground Equipment Supplier
+Plywood Supplier
+Pneumatic Tools Supplier
+Polythene And Plastic Sheeting Supplier
+Portable Toilet Supplier
+Protective Clothing Supplier
+Rainwater Tank Supplier
+Ready Mix Concrete Supplier
+Retaining Wall Supplier
+Rubber Products Supplier
+Sand & Gravel Supplier
+Scale Supplier
+Seed Supplier
+Solar Hot Water System Supplier
+Store Equipment Supplier
+Toner Cartridge Supplier
+Water Pump Supplier
+Water Softening Equipment Supplier
+Water Treatment Supplier
+Water Works Equipment Supplier
+Window Supplier
+Wood And Laminate Flooring Supplier
+Wood Frame Supplier
+Industrial Estates
+Information Services
+Interior Decorator
+Interior Design & Decor
+It Services
+Cybersecurity Service
+It Support
+Managed It Services
+Network Administration
+Jehovah's Witness Kingdom Hall
+Kitchen Furniture Store
+Laboratory
+Lamination Service
+Landscape designer
+Landscaper
+Landscaping & Gardening
+Lawn Care Service
+Landscaping Supply Store
+Language & Specialty Schools
+Cooking School
+Drama School
+Driving School
+Flight School
+Language School
+Afrikaans Language School
+English Language School
+French Language School
+Spanish Language School
+Zulu Language School
+Music Instructor
+Laser Cutting Service
+Leather goods store
+Leather Repair Service
+Divorce Service
+Employment Attorney
+Immigration Attorney
+Insurance Attorney
+Patent Attorney
+Personal Injury Attorney
+Tax Attorney
+Trial Attorney
+Legal Aid Office
+Library
+License Bureau
+Lifestyle Estates
+Golf Estates
+Retirement Estates
+Urban Estates
+Liquor store
+Little league field
+Livestock dealer
+Local government office
+Local Municipality
+Lock Store
+Lodge
+Logistics & Freight
+Freight Forwarding Service
+Logistics Service
+Shipping Company
+Warehousing Service
+Lutheran church
+Machine Construction
+Machine Repair Service
+Machine Shop
+Machine Workshop
+Magazine Store
+Manufacturing
+Brick Manufacturer
+Cement Manufacturer
+Cheese Manufacturer
+Clothes And Fabric Manufacturer
+Computer Hardware Manufacturer
+Cosmetic Products Manufacturer
+Display Stand Manufacturer
+Door Manufacturer
+Electronics Manufacturer
+Elevator Manufacturer
+Fabric Product Manufacturer
+Feed Manufacturer
+Fireplace Manufacturer
+Fmcg Manufacturer
+Glass Manufacturer
+Jewelry Manufacturer
+Leather Goods Manufacturer
+Lighting Manufacturer
+Machinery Parts Manufacturer
+Plastic Resin Manufacturer
+Stationery Manufacturer
+Sticker Manufacturer
+Tool Manufacturer
+Toy Manufacturer
+Trailer Manufacturer
+Ventilating Equipment Manufacturer
+Marine Consultancy & Compliance
+Environmental Impact Assessments
+Marine Surveyors
+Maritime Legal Services
+Regulatory Compliance Assistance
+Marine Engineering & Maintenance
+Dry Dock Services
+Hull Cleaning
+Propulsion System Services
+Ship Repair & Maintenance
+Marine Security & Safety
+Firefighting and Emergency Response
+Marine Insurance Providers
+Maritime Security Services
+Safety Training and Certification
+Marine Transportation
+Cargo Shipping Companies
+Cruise Lines
+Passenger Ferry Services
+Tug and Tow Services
+Market
+Markets & Bazaars
+Markets & Produce
+Farmers' Market
+Produce Market
+Produce Wholesaler
+Martial Arts & Self Defense
+Martial arts school
+Maternity Hospital
+Mattress Store
+Meat Products Store
+Mechanical, Electrical & Plumbing (MEP)
+Electrical Contractors
+Backup Power Solutions (Generators, UPS)
+Commercial & Industrial Wiring
+High Voltage Installations
+Lighting Systems
+Fire Protection & Safety Systems
+Emergency Lighting
+Fire Alarm Systems
+Smoke Detection Systems
+Mechanical Contractors
+Plumbing Contractors
+Commercial Plumbing Systems
+Fire Sprinkler Systems
+Gas Line Installation
+Media & Communications
+Desktop Publishing Service
+Printer Repair Service
+Mediation Service
+Medical Center
+Medical clinic
+Medical Facilities
+Emergency Services
+Emergency Care Physician
+Emergency Care Service
+Medical Office
+Public Medical Center
+Walk-in Clinic
+Medical Lawyer
+Meditation Instructor
+Memorial park
+Men's clothing store
+Metal Construction Company
+Metal Working Shop
+Metal Workshop
+Methodist church
+Metropolitan Municipality
+Microwave Oven Repair Service
+Military Hospital
+Mixed-Use Buildings
+Mixed-Use Developments
+Money Order Service
+Mortgage Broker
+Mosque
+Motels & Lodges
+Chalet
+Cottage
+Motel
+Motorsports Store
+Moving & Storage
+Moving Company
+Self-Storage Facility
+Storage Facility
+Moving Supply Store
+Municipal administration office
+National library
+National park
+Natural Goods Store
+Nature preserve
+Navigation Services
+Chart Providers
+Navigation Equipment Supply
+Pilot Services
+Vessel Traffic Management
+Neon Sign Shop
+Netball club
+Non-profit organization
+Novelty store
+Nurse Practitioner
+Nursing Agency
+Nursing Home
+Nut Store
+Off Roading Area
+Office Buildings
+Office Equipment Rental Service
+Office Parks
+Office Refurbishment Service
+Offshore Services
+Offshore Construction
+Oil and Gas Exploration Support
+ROV Operations
+Subsea Engineering
+Online & E-commerce
+Oral Surgeon
+Organic farm
+Orphanage
+Orthodox synagogue
+Outdoor & Adventure Activities
+Cycling Park
+Diving Center
+Fishing Camp
+Hunting Area
+Off-road Race Track
+Paintball Center
+Shooting Range
+Surf School
+Outdoor clothing and equipment shop
+Outdoor swimming pool
+Paralegal Services Provider
+Park
+Parking Lot
+Parts & Accessories
+Automotive Parts Store
+Car Alarm Supplier
+Car Stereo Store
+Motorcycle Parts Store
+Truck Parts Supplier
+Used Auto Parts Store
+Vehicle Wrapping Service
+Passport Office
+Passport Photo Processor
+Pension Office
+Pentecostal church
+Performing Arts
+Music & Dance
+Ballet Company
+Dance Theater
+Live Music Venue
+Symphony Orchestra
+Theaters & Venues
+Opera House
+Performing Arts Theater
+Theater
+Pest Control & Sanitation
+Garbage Collection Service
+Garbage Dump
+Garbage Dump Service
+Pet Care Services
+Pet Grooming & Boarding
+Mobile Pet Grooming
+Pet Boarding Service
+Pet Daycare Centre
+Pet Training & Behavior
+Animal Behaviorist
+Dog Training Center
+Pet Training
+Veterinary Services
+Animal Hospital
+Emergency Veterinary Service
+Veterinarian
+Pet Supplies & Retail
+Aquarium Shop
+Bird Shop
+Pet Adoption & Shelters
+Animal Shelter
+Pet Adoption Service
+Rescue Organisation
+Pet Food Store
+Photo Shop
+Photography Class
+Photography Service
+Picnic ground
+Picture Frame Shop
+Place of worship
+Plastic Surgery Clinic
+Playground
+Playground equipment supplier
+Plus size clothing store
+Podiatrist
+Port & Harbor Services
+Berthing Facilities
+Cargo Handling
+Mooring and Unmooring
+Pilotage Services
+Port Authorities
+Post office
+Poster Store
+Poultry Store
+Pregnancy Care Center
+Presbyterian church
+Primary & Secondary Schools
+Boarding School
+Charter School
+Community School
+High Schools
+Gymnasium School
+Higher Secondary School
+International School
+Magnet School
+Secondary School
+Primary school
+Printer Ink Refill Store
+Printing & Publishing Services
+Printing Equipment Supplier
+3D Printing
+Digital Printing
+Flexographic Printing
+Large Format Printing
+Offset Printing
+Printing Equipment and Supplies
+Prison
+Project Management & Consultancy
+Construction Management
+Cost Estimating & Budgeting
+Project Planning & Scheduling
+Quality Control & Assurance
+Quantity Surveying
+Bill of Quantities Preparation
+Contract Administration
+Cost Control Services
+Property Administrator
+Pub
+Public beach
+Public Defender's Office
+Public golf course
+Public health department
+Public library
+Public medical center
+Public Services
+Correctional Services Department
+Fire Protection Service
+Police
+Police Academy
+Sheriff's Department
+Public Safety Office
+Traffic Police Station
+Public swimming pool
+Public Transportation
+Airport
+Bus Station
+Shuttle Service
+Taxi Service
+Train Station
+Public Utilities
+Sewage Treatment Plant
+Racecourse
+Radio broadcaster
+Radio Station
+Real Estate Appraiser
+Real Estate Rental Agency
+Recreation center
+Recreational Activities
+Clubs & Social Venues
+Comedy Club
+Country Club
+Dance Club
+Karaoke Bar
+Social Club
+Outdoor Recreation
+Camping Grounds
+Cycling Paths
+Horseback Riding Trails
+Picnic Areas
+Sports Facilities
+Reform synagogue
+Reformed church
+Refrigerator Store
+Registered General Nurse
+Registration Office
+Religious destination
+Religious Goods Store
+Religious institution
+Religious organization
+Rentals & Leasing
+Recreational Vehicle Rental Agency
+Repair & Maintenance
+Car Inspection Station
+Diesel Engine Repair Service
+Motorcycle Repair Shop
+Muffler Shop
+Self Service Car Wash
+Used Tire Shop
+Tractor Repair Shop
+Trailer Repair Shop
+Vehicle Inspection
+Repairs
+Reproductive Health Clinic
+Resident Registration Office
+Resort hotel
+Restaurant
+Restaurants
+Brunch Restaurant
+Buffet Restaurant
+Fried Chicken Takeaway
+Chinese Restaurant
+Country Food Restaurant
+European Restaurants
+French Restaurant
+Greek Restaurant
+Mediterranean Restaurant
+Spanish Restaurant
+Fine Dining Restaurant
+Fish & Chips Restaurant
+Indian Restaurant
+Japanese Restaurant
+Korean Restaurant
+Meat Dish Restaurant
+Mexican Restaurant
+Organic Restaurant
+Sushi Restaurant
+Thai Restaurant
+Traditional Restaurant
+Turkish Restaurant
+Vegan Restaurant
+Vegetarian Restaurant
+Vietnamese Restaurant
+Resume Service
+Retail Stores
+Boot Store
+Burglar Alarm Store
+Cake Decorating Equipment Shop
+Camera Store
+Candle Store
+Childrens Book Store
+Childrens Store
+Chinese Supermarket
+Jeans Shop
+Comic Book Store
+Computer Software Store
+Consignment Shop
+Costume Store
+Credit Union
+Curtain Store
+Cutlery Store
+Do-it-yourself Shop
+Drug Store
+Electronics & Equipment
+Computer Networking Service
+Computer Parts Supply
+Computer Security Service
+Electronics Repair Shop
+Mobile Phone Repair Shop
+Exercise Equipment Store
+Fashion & Apparel Stores
+Clothing Alteration Service
+Dress Store
+Handbags Shop
+Hat Shop
+Maternity Store
+Plus Size Clothing Store
+Flag Store
+Flooring Store
+Gas Shop
+Gift Basket Store
+Glass Shop
+Lighting Store
+Lingerie Store
+Organic Drug Store
+Outlet Store
+Specialty Stores
+Cannabis Store
+Carpet Store
+Cookware Store
+Doll Store
+Embroidery Shop
+Flower Shop
+Gazebo Store
+Golf Shop
+Hobby Shop
+Hobby Store
+Hunting and Fishing Store
+Hunting Store
+Knife Store
+Leather Goods Store
+Marine Supply Store
+Music Store
+Musical Instrument Store
+Novelty Store
+Outdoor Clothing And Equipment Shop
+Outdoor Furniture Store
+Pen Store
+Sewing Shop
+Stamp Shop
+Thrift Store
+Wig Shop
+Retirement community
+Retirement Home
+Rubber Stamp Store
+Rug Store
+Rugby Field
+Running Store
+RV park
+Rv Supply Store
+Safe & Vault Shop
+Salons & Spas
+Eyebrow Bar
+Eyelash Salon
+Health Spa
+Spa and Health Club
+Thai Massage Therapist
+Sandblasting Service
+Sandwich Shop
+Satellite Communication Service
+Scaffolding Rental Service
+Scale Repair Service
+School Supply Store
+Scrapbooking Store
+Scuba Instructor
+Scuba Tour Agency
+Seafood restaurant
+Security & Safety
+Self-catering accommodation
+Senior citizen center
+Senior high school
+Serviced apartment
+Seventh-day Adventist church
+Sewing Machine Repair Service
+Sewing Machine Store
+Shelving Store
+Ship Chandlers & Supplies
+Equipment Rental
+Provisioning Services
+Safety Equipment
+Spare Parts Supply
+Shoe Shining Service
+Shoe store
+Shopfitter
+Shopping Centres
+Community Shopping Centres
+Flea Markets and Plazas
+Lifestyle Centres
+Outlet Malls
+Regional Malls
+Super-Regional Malls
+Strip Malls
+Shopping mall
+Sightseeing & Attractions
+Historical & Cultural Landmarks
+Architectural Landmarks
+Bridges
+Castles & Fortresses
+Famous Buildings
+Lighthouses
+Historical Sites
+Ancient Ruins
+Heritage Site
+Historical Place
+Memorial Park
+Monument
+Natural Attractions
+Mountains & Caves
+Caves and Caverns
+Hiking Trails
+Mountain Range
+Nature Reserves
+National Park
+National Reserve
+Nature Reserve
+Wetlands Preserve
+Wildlife Refuge
+Parks & Gardens
+Arboretum
+Botanical Garden
+Dog Park
+Ecological Park
+Picnic Ground
+Public Garden
+Scenic Spots
+Lookout Point
+Scenic Drive
+Scenic Overlook
+Scenic Spot
+Water Features
+Beach
+Coastal Area
+Lake
+Public Beach
+Waterfall
+Sightseeing Tour Agency
+Skateboard Shop
+Skatepark
+Soccer Field
+Social services organization
+Social welfare center
+Social Worker
+Sofa Store
+Soft Drinks Shop
+Software & Development
+Software Development
+Software company
+Soup kitchen
+South African restaurant
+Souvenir Store
+Specialist Services
+Child Psychiatrist
+Cosmetic Surgeon
+Dental Implants Provider
+Endodontist
+Periodontist
+Prosthodontist
+Endocrinologist
+Gynecologist
+Hand Surgeon
+Lasik Surgeon
+Neurosurgeon
+Ophthalmology Clinic
+Oral And Maxillofacial Surgeon
+Orthopedic Clinic
+Otolaryngologist
+Pediatric Ophthalmologist
+Pediatrician
+Pulmonologist
+Specialized Accommodation
+Specialized Clinic
+Specialized Clinics
+Cancer Treatment Centre
+Child Health Care Centre
+Diabetes Center
+Diabetologist
+Fertility Clinic
+Fertility Physician
+Geriatric Care
+Men's Health Clinic
+Mental Health Services
+Family Counselor
+Marriage Or Relationship Counselor
+Psychoneurological Specialized Clinic
+Occupational Medical Physician
+Occupational Safety And Health
+Pain Control Clinic
+Pain Management Physician
+Sleep Clinic
+Women's Health Clinic
+Specialty Animal Services
+Equestrian Services
+Horse Riding School
+Stable
+Tack Shop
+Exotic Pets
+Exotic Pet Shop
+Reptile House
+Reptile Store
+Pet Photography & Art
+Pet Photographer
+Pet Portrait Artist
+Specialty Services
+Specialty Trade Contractors
+Demolition Contractors
+Building Demolition
+Hazardous Material Removal (Asbestos, Lead)
+Site Clearance
+Earthmoving & Excavation
+Land Grading
+Site Preparation
+Trenching Services
+Concrete Flooring
+Resin & Epoxy Flooring
+Glazing & Cladding
+Curtain Wall Installation
+Exterior Cladding Systems
+Glass Installation & Repair
+Interior Finishing
+Acoustic Ceilings
+Drywall Installation & Finishing
+Partition Systems
+Masonry & Concrete Work
+Bricklaying
+Concrete Placement & Finishing
+Stone Masonry
+Other Specialty Contractors
+Industrial Painting
+Protective Coatings Application
+Sandblasting Services
+Commercial Roofing
+Industrial Roofing
+Roof Restoration & Maintenance
+Sporting goods store
+Sports
+Sports Activity Location
+Sports club
+Sports Clubs & Organisations
+Bowling Club
+Cricket Club
+Dance School
+Football Club
+Golf Club
+Gymnastics Club
+Hockey Club
+Lawn Bowls Club
+Boxing Club
+Judo Club
+Jujitsu School
+Kung Fu School
+Muay Thai Boxing Gym
+Taekwondo School
+Wrestling School
+Rugby Club
+Soccer Club
+Squash Club
+Swim Club
+Tennis Club
+Yacht Club
+Sports complex
+Sports Equipment & Supplies
+Fitness Equipment Wholesaler
+Sports Accessories Wholesaler
+Sports Equipment Store
+Sports Equipment Rental Service
+Ice Skating Rink
+Rock Climbing Gym
+Roller Skating Rink
+Skateboard Park
+Squash Court
+Indoor Swimming Pool
+Outdoor Swimming Pool
+Public Swimming Pool
+Tennis Court
+Sports Medicine Clinic
+Sports Medicine Physician
+Sports Nutrition Store
+Sports School
+Stadium
+State Government Office
+State Park
+Store
+Structural Engineering & Services
+Retrofitting & Rehabilitation
+Building Reinforcement
+Historical Building Preservation
+Structural Upgrades
+Structural Design & Analysis
+Load-Bearing Calculations
+Seismic & Wind Design
+Structural Assessments & Inspections
+Structural Fabrication
+Precast Concrete Structures
+Timber Frame Construction
+Student housing center
+Study At Home School
+Support Services
+Medical Laboratories & Imaging
+Medical Diagnostic Imaging Center
+Radiologist
+Radiology Center
+Medical Spa
+Pharmacies & Medical Supplies
+Medical Equipment Supplier
+Pharmacy
+Surf Shop
+Surgical Center
+Surveying Service
+Swimming Facility
+Swimming Instructor
+Swimming pool
+Swimming School
+Swimwear Store
+T-shirt Store
+Tai Chi School
+Tailor
+Takeout Restaurant
+Tattoo & Piercing
+Body Piercing Shop
+Tattoo Shop
+Tax Collector's Office
+Tax Preparation
+Taxicab Stand
+Tea Store
+Technology park
+Telecommunications
+Television Repair Service
+Tennis Store
+Therapy & Rehabilitation
+Occupational Therapist
+Tire shop
+Tobacco Shop
+Tool & Die Shop
+Tool Grinding Service
+Tool Repair Shop
+Tour Operators
+Canoe & Kayak Tour Agency
+Cruise Agency
+Helicopter Tour Agency
+Tourist attraction
+Toy store
+Trading Card Store
+Traditional Market
+Trailer Supply Store
+Train station
+Transmission Shop
+Transportation service
+Travel Agencies & Services
+Travel Services
+Tree Service
+Trophy Shop
+Tropical Fish Store
+Truck Accessories Store
+Tutoring & Test Prep
+Educational Testing Service
+Private Tutor
+Test Preparation Service
+Tutoring Service
+Tutoring service
+Typing Service
+Underwear Store
+Unemployment Office
+University library
+Urban Planning Department
+Urology Clinic
+Used Book Store
+Vacuum Cleaner Repair Shop
+Vacuum Cleaner Store
+Valet Parking Service
+Vaporizer Store
+Vascular Surgeon
+Vehicle Rentals
+Car Rental
+Motorcycle Rental
+RV Rental Agency
+Vehicle Services
+Bus Tour Agency
+Limousine Service
+Venues
+Banquet Hall
+Exhibition Hall
+Party Venue
+Video Editing Service
+Video Production Service
+Village hall
+Vintage Clothing Store
+Vinyl Sign Shop
+Visitor center
+Vocational School
+Voter Registration Office
+Wallpaper Store
+Warehouse Store
+Washer & Dryer Store
+Water park
+Water Purification Company
+Water Testing Service
+Water Utility Company
+Wedding Services
+Bridal Shop
+Hair and Makeup Artist
+Photographer
+Wedding Chapel
+Wedding Officiant
+Wedding Service
+Wedding Store
+Wellness & Holistic Services
+Nutritionist
+Wellness Program
+Wellness center
+Western Apparel Store
+Whale Watching Tour Agency
+Wholesalers & Distributors
+Cash And Carry Wholesaler
+Clothing Wholesaler
+Coffee Wholesaler
+Confectionery Wholesaler
+Construction Material Wholesaler
+Electrical Wholesaler
+Fabric Wholesaler
+Furniture Wholesaler
+Household Goods Wholesaler
+Hygiene Articles Wholesaler
+Industrial Chemicals Wholesaler
+Leather Wholesaler
+Meat Wholesaler
+Plastic Bags Wholesaler
+Plastic Wholesaler
+Stationery Wholesaler
+Tool Wholesaler
+Wholesale Bakery
+Wholesale Food Store
+Wholesale Grocer
+Wholesale Plant Nursery
+Wildlife & Natural Areas
+Bird Watching Areas
+Aviary
+Bird Sanctuary
+Wildlife and safari park
+Wildlife park
+Window Installation Service
+Window Tinting Service
+Window Treatment Store
+Wood Floor Installation Service
+Wood Floor Refinishing Service
+Wool Store
+Work Clothes Store
+Yacht and Leisure Craft Services
+Marina Facilities
+Recreational Fishing Charters
+Sailing Schools
+Yacht Charter and Brokerage
+Yoga Retreat Center
+Youth center
+Youth organization
+Youth social services organization

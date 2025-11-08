@@ -1,0 +1,25 @@
+{
+  "actorSpecification": 1,
+  "name": "news24-scraper",
+  "version": "0.1",
+  "title": "News24 Scraper",
+  "description": "Scrapes articles from News24 category pages using Playwright. Supports infinite scroll, duplicate prevention, and adjustable concurrency.",
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "meta": {
+    "author": "Your Name or Organization",
+    "language": "python",
+    "tools": ["playwright", "apify-sdk"]
+  },
+  "build": "pip install -r requirements.txt && playwright install --with-deps",
+  "builds": [
+    {
+      "platform": "linux",
+      "options": {
+        "includeBuildLogs": true
+      }
+    }
+  ]
+}

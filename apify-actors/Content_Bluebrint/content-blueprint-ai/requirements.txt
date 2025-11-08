@@ -1,0 +1,4 @@
+apify<4.0.0
+openai
+aiohttp
+tenacity

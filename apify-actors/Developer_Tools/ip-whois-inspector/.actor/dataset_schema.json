@@ -1,0 +1,64 @@
+{
+"actorSpecification": 1,
+"fields": {
+"ip": {
+"type": "string",
+"description": "The IP address that was inspected."
+},
+"whois_data": {
+"type": "object",
+"description": "WHOIS/RDAP data including ISP, network, ASN, and location information."
+},
+"reverse_dns": {
+"type": "object",
+"description": "Result of the Reverse DNS (PTR) lookup."
+},
+"geolocation": {
+"type": "object",
+"description": "Offline IP geolocation data (country, city, timezone)."
+},
+"open_ports": {
+"type": "array",
+"description": "A list of ports that were found to be open."
+}
+},
+"views": {
+"overview": {
+"title": "Results",
+"transformation": {
+"fields": [
+"ip",
+"reverse_dns",
+"geolocation",
+"open_ports",
+"whois_data"
+]
+},
+"display": {
+"component": "table",
+"properties": {
+"ip": {
+"label": "IP Address",
+"format": "text"
+},
+"reverse_dns": {
+"label": "Reverse DNS",
+"format": "object"
+},
+"geolocation": {
+"label": "Geolocation",
+"format": "object"
+},
+"open_ports": {
+"label": "Open Ports",
+"format": "array"
+},
+"whois_data": {
+"label": "WHOIS Data",
+"format": "object"
+}
+}
+}
+}
+}
+}

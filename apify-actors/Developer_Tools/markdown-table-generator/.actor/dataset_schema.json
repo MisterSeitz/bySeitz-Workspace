@@ -1,0 +1,35 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "output_format": {
+      "type": "string"
+    },
+    "generated_table": {
+      "type": "string"
+    }
+  },
+  "views": {
+    "results": {
+      "title": "Generated Table",
+      "transformation": {
+        "fields": [
+          "output_format",
+          "generated_table"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "output_format": {
+            "label": "Format",
+            "format": "text"
+          },
+          "generated_table": {
+            "label": "Generated Table",
+            "format": "text"
+          }
+        }
+      }
+    }
+  }
+}

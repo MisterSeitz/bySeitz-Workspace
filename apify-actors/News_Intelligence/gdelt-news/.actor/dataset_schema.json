@@ -1,0 +1,49 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "summary": {
+      "title": "Article Summaries",
+      "transformation": {
+        "fields": [
+          "published",
+          "source",
+          "title",
+          "url",
+          "summary",
+          "key_entities"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "published": {
+            "label": "Published Date",
+            "format": "date" 
+            // 🌟 NOTE: The 'format' was already "date" based on the uploaded file,
+            // but this confirms the correct setting for the Apify UI.
+          },
+          "source": {
+            "label": "Source",
+            "format": "text"
+          },
+          "title": {
+            "label": "Article Title",
+            "format": "text"
+          },
+          "url": {
+            "label": "Original URL",
+            "format": "link"
+          },
+          "summary": {
+            "label": "AI Summary",
+            "format": "text"
+          },
+          "key_entities": {
+            "label": "Key Entities",
+            "format": "array"
+          }
+        }
+      }
+    }
+  }
+}

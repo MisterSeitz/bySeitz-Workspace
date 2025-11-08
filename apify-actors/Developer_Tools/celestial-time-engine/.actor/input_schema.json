@@ -1,0 +1,184 @@
+{
+  "title": "🌌 Celestial Time Engine Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "locations": {
+      "title": "📍 Locations",
+      "type": "array",
+      "description": "List of coordinates, place names, or predefined locations to process.",
+      "editor": "schemaBased",
+      "items": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "title": "Query (optional)",
+            "description": "Name or address of a location (e.g., 'Cape Town, South Africa').",
+            "editor": "textfield"
+          },
+          "latitude": {
+            "type": "number",
+            "title": "Latitude",
+            "description": "Latitude in decimal degrees (e.g., -33.9249)."
+          },
+          "longitude": {
+            "type": "number",
+            "title": "Longitude",
+            "description": "Longitude in decimal degrees (e.g., 18.4241)."
+          },
+          "customId": {
+            "type": "string",
+            "title": "Custom ID",
+            "description": "Optional identifier to tag this specific location in the results."
+          },
+          "preset": {
+            "type": "string",
+            "title": "🌍 Popular Locations",
+            "description": "Choose from a list of common cities and holy sites. If selected, overrides manual latitude/longitude.",
+            "editor": "select",
+            "enum": [
+              "mecca",
+              "medina",
+              "cape_town",
+              "cairo",
+              "istanbul",
+              "dubai",
+              "london",
+              "new_york",
+              "jakarta",
+              "lagos"
+            ],
+            "enumTitles": [
+              "🇸🇦 Mecca, Saudi Arabia",
+              "🕋 Medina, Saudi Arabia",
+              "🇿🇦 Cape Town, South Africa",
+              "🇪🇬 Cairo, Egypt",
+              "🇹🇷 Istanbul, Turkey",
+              "🇦🇪 Dubai, UAE",
+              "🇬🇧 London, United Kingdom",
+              "🇺🇸 New York, USA",
+              "🇮🇩 Jakarta, Indonesia",
+              "🇳🇬 Lagos, Nigeria"
+            ]
+          }
+        }
+      }
+    },
+    "date": {
+      "title": "📅 Date",
+      "type": "string",
+      "editor": "datepicker",
+      "description": "Date in YYYY-MM-DD format (defaults to today)."
+    },
+    "modules": {
+      "title": "⚙️ Modules to Run",
+      "type": "array",
+      "editor": "select",
+      "description": "Select which time-event modules to calculate.",
+      "default": ["core"],
+      "items": {
+        "type": "string",
+        "enum": [
+          "core",
+          "aviation",
+          "islamic",
+          "photography",
+          "jewish",
+          "moon",
+          "planets",
+          "eclipses",
+          "weather",
+          "christian",
+          "hindu",
+          "chinese",
+          "magnetic"
+        ],
+        "enumTitles": [
+          "☀️ Core Sun",
+          "✈️ Aviation Twilight",
+          "🕌 Islamic Prayer Times",
+          "📸 Photography Hours",
+          "✡️ Jewish Zmanim",
+          "🌙 Moon Phase",
+          "🪐 Planetary Rise/Set",
+          "🌑 Eclipses",
+          "🌤️ Weather & Cloud Cover",
+          "✝️ Christian Calendar",
+          "🕉️ Hindu Panchang",
+          "🐉 Chinese Lunar Calendar",
+          "🧭 Magnetic Declination"
+        ]
+      }
+    },
+    "config": {
+      "title": "🔧 Advanced Configuration",
+      "type": "object",
+      "description": "Optional fine-tuning for specific modules such as Islamic or Weather.",
+      "editor": "schemaBased",
+      "properties": {
+        "islamic": {
+          "title": "🕌 Islamic Prayer Configuration",
+          "type": "object",
+          "description": "Settings for calculating prayer times and Asr method.",
+          "properties": {
+            "method": {
+              "title": "🧭 Calculation Method",
+              "type": "string",
+              "default": "ISNA",
+              "editor": "select",
+              "enum": [
+                "ISNA",
+                "MuslimWorldLeague",
+                "Makkah",
+                "Egypt",
+                "Karachi",
+                "Tehran",
+                "Jafari",
+                "Turkey",
+                "Dubai"
+              ],
+              "enumTitles": [
+                "🇺🇸 ISNA (Islamic Society of North America)",
+                "🌍 Muslim World League",
+                "🇸🇦 Umm al-Qura (Makkah)",
+                "🇪🇬 Egyptian Survey",
+                "🇵🇰 University of Karachi",
+                "🇮🇷 Tehran Institute",
+                "☪️ Jafari (Shia)",
+                "🇹🇷 Diyanet (Turkey)",
+                "🇦🇪 Dubai (UAE)"
+              ],
+              "description": "Choose the organization or regional standard used to calculate prayer times."
+            },
+            "asr": {
+              "title": "🕓 Asr Calculation Method",
+              "type": "string",
+              "default": "STANDARD",
+              "editor": "select",
+              "enum": ["STANDARD", "HANAFI"],
+              "enumTitles": [
+                "Standard (Shafi’i, Hanbali, Maliki)",
+                "Hanafi (Later Asr time)"
+              ],
+              "description": "Determines when Asr begins — STANDARD for Shafi’i, Hanbali, Maliki; HANAFI for Hanafi school."
+            }
+          }
+        }
+      }
+    },
+    "weatherApiKey": {
+      "title": "🌦️ OpenWeatherMap API Key",
+      "type": "string",
+      "description": "Your API key for fetching current weather data (required if Weather module is enabled).",
+      "editor": "textfield",
+      "isSecret": true
+    },
+    "flattenOutput": {
+      "title": "📊 Flatten Output",
+      "type": "boolean",
+      "description": "If true, output will be flattened for CSV/Excel exports.",
+      "default": false
+    }
+  }
+}

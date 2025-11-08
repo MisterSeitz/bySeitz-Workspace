@@ -1,0 +1,131 @@
+{
+  "title": "Yellow Pages Scraper Dataset Item",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "crawl_url": {
+      "title": "Crawl URL",
+      "type": "string",
+      "description": "The source URL of the Business Detail Page."
+    },
+    "business_name": {
+      "title": "Business Name",
+      "type": "string",
+      "description": "Name of the business."
+    },
+    "phone_number": {
+      "title": "Phone Number",
+      "type": "string",
+      "description": "The primary phone number of the business."
+    },
+    "full_address": {
+      "title": "Full Address",
+      "type": "string",
+      "description": "The full street address, city, state, and ZIP."
+    },
+    "website_url": {
+      "title": "Website",
+      "type": "string",
+      "description": "The business's website URL."
+    },
+    "rating": {
+      "title": "Rating",
+      "type": "string",
+      "description": "The star rating (e.g., '4.5')."
+    },
+    "review_count": {
+      "title": "Review Count",
+      "type": "string",
+      "description": "The total number of reviews."
+    },
+    "categories": {
+      "title": "Categories",
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "List of business categories."
+    },
+    "general_info": {
+        "title": "General Info",
+        "type": "string",
+        "description": "The 'General Info' text block for the business."
+    },
+    "logo_url": {
+        "title": "Logo URL",
+        "type": "string",
+        "description": "URL of the business logo, if present."
+    },
+    "services_products": {
+        "title": "Services/Products",
+        "type": "string",
+        "description": "The 'Services/Products' text block."
+    },
+    "payment_methods": {
+        "title": "Payment Methods",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of accepted payment methods."
+    },
+    "aka": {
+        "title": "AKA (Also Known As)",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Other names for the business."
+    },
+    "neighborhoods": {
+        "title": "Neighborhoods",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Neighborhoods served or located in."
+    },
+    "other_links": {
+        "title": "Other Links",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Additional links from the 'More Info' section."
+    },
+    "social_links": {
+        "title": "Social Links",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "Links to social media profiles (e.g., Facebook)."
+    },
+    "email": {
+        "title": "Email",
+        "type": "string",
+        "description": "Business email address."
+    },
+    "business_hours": {
+        "title": "Business Hours",
+        "type": "string",
+        "description": "Formatted business hours."
+    },
+    "claimed_status": {
+        "title": "Claimed Status",
+        "type": "string",
+        "description": "e.g., 'Claimed' or 'Unclaimed'."
+    },
+    "gallery_image_urls": {
+        "title": "Gallery Image URLs",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of URLs for gallery images."
+    },
+    "years_in_business": {
+        "title": "Years in Business",
+        "type": "string",
+        "description": "Text indicating years in business, e.g., '41 Years in Business'."
+    },
+    "places_near_with_category": {
+        "title": "Places Near",
+        "type": "array",
+        "items": { "type": "string" },
+        "description": "List of links to nearby places."
+    },
+    "crawl_error": {
+      "title": "Crawl Error",
+      "type": "string",
+      "description": "The specific error message if scraping failed for this URL."
+    }
+  },
+  "required": ["crawl_url"]
+}

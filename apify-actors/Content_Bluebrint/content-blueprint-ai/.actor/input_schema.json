@@ -1,0 +1,70 @@
+{
+    "title": "Content Blueprint AI Input",
+    "description": "The professional configuration for content generation, blending automated pipeline intelligence with user-defined creative preferences.",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "openaiApiKey": {
+            "title": "OpenAI API Key (Secret)",
+            "description": "A secret OpenAI API Key. For Apify Store users, this is handled by the actor owner. For direct use, provide your own key.",
+            "type": "string",
+            "editor": "textfield",
+            "isSecret": true,
+            "sectionCaption": "1. Secret Configuration (for Actor Owner)"
+        },
+        "input_source": {
+            "type": "string",
+            "title": "Input Source Mode",
+            "editor": "select",
+            "enum": [
+                "DatasetID",
+                "RawJSON"
+            ],
+            "enumTitles": [
+                "Dataset ID (Recommended)",
+                "Raw JSON (Manual Data)"
+            ],
+            "default": "DatasetID",
+            "description": "Choose how to provide the intelligence data. 'Dataset ID' is the standard way to use the output from the upstream actors.",
+            "sectionCaption": "2. Data Input"
+        },
+        "dataset_id": {
+            "type": "string",
+            "title": "Source Dataset ID",
+            "description": "The ID of the dataset containing the enriched topics from the 'Sentiment Intel' or 'Keyword Opportunity' actor.",
+            "nullable": true,
+            "editor": "resourcePicker",
+            "resourceType": "dataset"
+        },
+        "raw_json_topics": {
+            "type": "array",
+            "title": "Raw JSON Topics List",
+            "description": "A list of fully enriched topic objects for immediate processing. Use this for manual runs or testing.",
+            "editor": "json",
+            "nullable": true
+        },
+        "max_topics_to_process": {
+            "type": "integer",
+            "title": "Max Topics to Process",
+            "editor": "number",
+            "unit": "Topics",
+            "default": 10,
+            "description": "Limits how many high-priority topics (based on Trend Score) are processed for content generation.",
+            "sectionCaption": "3. Generation Settings"
+        },
+        "creativity_level": {
+            "type": "integer",
+            "title": "Creativity Level (LLM Temperature)",
+            "editor": "number",
+            "minimum": 0,
+            "maximum": 100,
+            "unit": "%",
+            "default": 70,
+            "description": "Higher values yield more creative ideas. Lower values are more focused. (Converts to a 0.0-1.0 float)."
+        }
+    },
+    "required": [
+        "input_source",
+        "openaiApiKey"
+    ]
+}

@@ -1,0 +1,43 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "url": { "type": "string" },
+      "title": { "type": "string" },
+      "publicationDate": { "type": "string" },
+      "keyPoints": {
+        "type": "array",
+        "items": { "type": "string" }
+      },
+      "text": { "type": "string" }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Scraped Articles",
+      "transformation": {
+        "fields": [
+          "title",
+          "publicationDate",
+          "url",
+          "keyPoints",
+          "text"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "url": {
+            "label": "Article URL",
+            "format": "link"
+          },
+          "publicationDate": {
+            "label": "Date",
+            "format": "text"
+          }
+        }
+      }
+    }
+  }
+}

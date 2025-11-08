@@ -1,0 +1,162 @@
+{
+  "title": "🌾 FoodTech & Agriculture Intelligence Pipeline",
+  "description": "Fetch and analyze news from top FoodTech, AgTech, and Agriculture sources using a reliable two-stage AI analysis pipeline.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "source": {
+      "title": "News Source",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "all",
+        "agfundernews",
+        "igrownews",
+        "foodtechconnect",
+        "agriculturedive",
+        "agrivi",
+        "thriveagrifood",
+        "foodnavigator",
+        "foodnavigator_usa",
+        "foodnavigator_asia",
+        "foodnavigator_latam",
+        "ifarm",
+        "icl_planet",
+        "forwardfooding",
+        "branchfood",
+        "futurefoodinstitute",
+        "globalagtechinitiative",
+        "futurefoodtechchicago",
+        "thespoon",
+        "fooddive",
+        "agritechtomorrow_news",
+        "agritechtomorrow_agritech",
+        "innovadatabase",
+        "vertical_farming_net",
+        "agdaily",
+        "precisionfarmingdealer",
+        "nosh_releases",
+        "nosh_newsletter",
+        "foodengineeringmag",
+        "freightfarms",
+        "urbanagnews",
+        "foodbusinessnews",
+        "agri_pulse",
+        "greenqueen",
+        "agrigateone",
+        "custom"
+      ],
+      "enumTitles": [
+        "🌍 All FoodTech/Agriculture Sources",
+        "AgFunderNews",
+        "iGrow News",
+        "FoodTech Connect",
+        "Agriculture Dive",
+        "Agrivi Blog",
+        "Thrive AgriFood",
+        "FoodNavigator (Europe)",
+        "FoodNavigator-USA",
+        "FoodNavigator-Asia",
+        "FoodNavigator-LATAM",
+        "iFarm",
+        "ICL Planet Startup Hub",
+        "Forward Fooding",
+        "Branchfood Blog",
+        "Future Food Institute",
+        "Global AgTech Initiative",
+        "Future Food Tech Chicago",
+        "The Spoon",
+        "Food Dive",
+        "AgriTech Tomorrow (News)",
+        "AgriTech Tomorrow (AgriTech)",
+        "Innovadatabase (Food Ingredients)",
+        "Vertical Farming Net",
+        "AgDaily",
+        "Precision Farming Dealer",
+        "NOSH (Press Releases)",
+        "NOSH (Newsletter)",
+        "Food Engineering Magazine",
+        "Freight Farms Blog",
+        "Urban Ag News",
+        "Food Business News",
+        "Agri-Pulse",
+        "Green Queen (Sustainable Food)",
+        "Agrigate One",
+        "🧩 Custom URL"
+      ],
+      "default": "all",
+      "description": "Select the news feed to collect from.",
+      "sectionCaption": "Data Source Settings"
+    },
+    "customFeedUrl": {
+      "title": "Custom RSS Feed URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Provide a custom RSS feed URL (if 'Custom' selected)."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles",
+      "type": "integer",
+      "editor": "number",
+      "description": "Provide a maximum number of articles to fetch",
+      "default": 10
+    },
+    "region": {
+      "title": "Search Region",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "wt-wt",
+        "us-en",
+        "uk-en",
+        "za-en",
+        "au-en",
+        "ca-en",
+        "de-de",
+        "fr-fr"
+      ],
+      "enumTitles": [
+        "Any Region",
+        "United States (English)",
+        "United Kingdom (English)",
+        "South Africa (English)",
+        "Australia (English)",
+        "Canada (English)",
+        "Germany (German)",
+        "France (French)"
+      ],
+      "default": "wt-wt",
+      "description": "Select the region for DuckDuckGo news search results.",
+      "sectionCaption": "Search Filter Settings"
+    },
+    "timeLimit": {
+      "title": "Time Limit",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "any",
+        "d",
+        "w",
+        "m"
+      ],
+      "enumTitles": [
+        "Any Time",
+        "Past Day",
+        "Past Week",
+        "Past Month"
+      ],
+      "default": "w",
+      "description": "Filter search results by time period."
+    },
+    "runTestMode": {
+      "title": "Admin Test Mode (Bypasses ALL External API Costs)",
+      "type": "boolean",
+      "description": "Setting this to true bypasses external API calls for zero-cost testing. **Do not enable in production.**",
+      "default": false,
+      "sectionCaption": "Debugging"
+    }
+  },
+  "required": [
+    "source"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "actorSpecification": 1,
+    "views": {
+        "overview": {
+            "title": "Articles",
+            "transformation": {
+                "fields": [
+                    "title",
+                    "link",
+                    "summary",
+                    "description",
+                    "source",
+                    "page"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "title": {
+                        "label": "Title",
+                        "format": "text"
+                    },
+                    "link": {
+                        "label": "Link",
+                        "format": "link"
+                    },
+                    "summary": {
+                        "label": "AI Summary",
+                        "format": "text"
+                    },
+                    "description": {
+                        "label": "Original Description",
+                        "format": "text"
+                    },
+                    "source": {
+                        "label": "Source",
+                        "format": "text"
+                    },
+                    "page": {
+                        "label": "API Page",
+                        "format": "number"
+                    }
+                }
+            }
+        }
+    }
+}

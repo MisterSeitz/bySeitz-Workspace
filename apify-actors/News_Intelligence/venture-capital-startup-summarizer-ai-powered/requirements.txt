@@ -1,0 +1,6 @@
+apify < 4.0.0
+apify-client
+pydantic
+langgraph < 1.0.0
+feedparser
+openai

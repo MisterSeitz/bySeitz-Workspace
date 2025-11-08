@@ -1,0 +1,126 @@
+{
+  "title": "💎 Luxury & Lifestyle News Intelligence Pipeline",
+  "description": "Fetch and analyze news from top Luxury, High-End Market, and Lifestyle sources using a reliable two-stage AI analysis pipeline.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "source": {
+      "title": "News Source",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "all",
+        "trulyclassy",
+        "luxurylaunches",
+        "robbreport_lifestyle",
+        "robbreport_main",
+        "theluxuryeditor",
+        "luxurynewsonline",
+        "afluxurylifestyle",
+        "luxuo",
+        "luxebible",
+        "luxurialifestyle",
+        "luxuryendless",
+        "lux_life",
+        "serrarigroup",
+        "tempusmagazine",
+        "wmwnewsglobal",
+        "luxurydaily",
+        "custom"
+      ],
+      "enumTitles": [
+        "🌍 All Luxury & Lifestyle Sources",
+        "Truly Classy",
+        "Luxury Launches (Web Stories)",
+        "Robb Report (Lifestyle)",
+        "Robb Report (Main)",
+        "The Luxury Editor",
+        "Luxury News Online",
+        "AF Luxury Lifestyle",
+        "Luxuo",
+        "Luxe Bible (Lifestyle)",
+        "Luxuria Lifestyle",
+        "Luxury Endless",
+        "Lux Life Digital",
+        "Serrari Group",
+        "Tempus Magazine",
+        "WMW News Global",
+        "Luxury Daily (Consolidated Feeds)",
+        "🧩 Custom URL"
+      ],
+      "default": "all",
+      "description": "Select the news feed to collect from.",
+      "sectionCaption": "Data Source Settings"
+    },
+    "customFeedUrl": {
+      "title": "Custom RSS Feed URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Provide a custom RSS feed URL (if 'Custom' selected)."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles",
+      "type": "integer",
+      "editor": "number",
+      "description": "Provide a maximum number of articles to fetch",
+      "default": 10
+    },
+    "region": {
+      "title": "Search Region",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "wt-wt",
+        "us-en",
+        "uk-en",
+        "za-en",
+        "au-en",
+        "ca-en",
+        "de-de",
+        "fr-fr"
+      ],
+      "enumTitles": [
+        "Any Region",
+        "United States (English)",
+        "United Kingdom (English)",
+        "South Africa (English)",
+        "Australia (English)",
+        "Canada (English)",
+        "Germany (German)",
+        "France (French)"
+      ],
+      "default": "wt-wt",
+      "description": "Select the region for DuckDuckGo news search results.",
+      "sectionCaption": "Search Filter Settings"
+    },
+    "timeLimit": {
+      "title": "Time Limit",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "any",
+        "d",
+        "w",
+        "m"
+      ],
+      "enumTitles": [
+        "Any Time",
+        "Past Day",
+        "Past Week",
+        "Past Month"
+      ],
+      "default": "w",
+      "description": "Filter search results by time period."
+    },
+    "runTestMode": {
+      "title": "Admin Test Mode (Bypasses ALL External API Costs)",
+      "type": "boolean",
+      "description": "Setting this to true bypasses external API calls for zero-cost testing. **Do not enable in production.**",
+      "default": false,
+      "sectionCaption": "Debugging"
+    }
+  },
+  "required": [
+    "source"
+  ]
+}

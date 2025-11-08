@@ -1,0 +1,43 @@
+{
+  "actorSpecification": 1,
+  "views": {
+    "results": {
+      "title": "Results",
+      "transformation": {
+        "fields": [
+          "date", "timezone", "resolved_name",
+          "resolved_latitude", "resolved_longitude",
+          "modules_core_sun_sunrise", "modules_core_sun_sunset",
+          "modules_core_sun_day_length_seconds",
+          "modules_moon_phase_name", "modules_moon_illumination_percent",
+          "modules_moon_moonrise", "modules_moon_moonset",
+          "modules_planets_venus_rise", "modules_planets_venus_set",
+          "modules_weather_temp_c", "modules_weather_cloud_cover_percent",
+          "modules_islamic_prayer_fajr", "modules_islamic_prayer_maghrib",
+          "modules_islamic_prayer_qibla_direction_degrees",
+          "modules_christian_easter_date", "modules_hindu_note",
+          "modules_chinese_lunar_month", "modules_magnetic_declination_declination_degrees"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "date": { "label": "Date", "format": "text" },
+          "timezone": { "label": "TZ", "format": "text" },
+          "resolved_name": { "label": "Location", "format": "text" },
+          "modules_core_sun_sunrise": { "label": "Sunrise", "format": "date" },
+          "modules_core_sun_sunset": { "label": "Sunset", "format": "date" },
+          "modules_core_sun_day_length_seconds": { "label": "Day (sec)", "format": "number" },
+          "modules_moon_phase_name": { "label": "Moon Phase", "format": "text" },
+          "modules_moon_illumination_percent": { "label": "Moon %", "format": "number" },
+          "modules_weather_temp_c": { "label": "Temp °C", "format": "number" },
+          "modules_islamic_prayer_fajr": { "label": "Fajr", "format": "date" },
+          "modules_islamic_prayer_maghrib": { "label": "Maghrib", "format": "date" },
+          "modules_christian_easter_date": { "label": "Easter", "format": "date" },
+          "modules_chinese_lunar_month": { "label": "Lunar Month", "format": "number" },
+          "modules_magnetic_declination_declination_degrees": { "label": "Declination°", "format": "number" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "cluster_topic": { "type": "string" },
+        "trend_score": { "type": "number" },
+        "search_volume": { "type": "integer" },
+        "competition": { "type": "string" },
+        "top_of_page_bid_low": { "type": "number" },
+        "top_of_page_bid_high": { "type": "number" },
+        "ai_cluster_score": { "type": "integer" },
+        "best_strategy": { "type": "string" },
+        "long_tail_opportunities": { "type": "array" }
+    },
+    "views": {
+        "overview": {
+            "title": "Keyword Opportunities",
+            "transformation": {
+                "fields": [
+                    "cluster_topic",
+                    "trend_score",
+                    "search_volume",
+                    "competition",
+                    "ai_cluster_score",
+                    "best_strategy",
+                    "top_of_page_bid_low",
+                    "top_of_page_bid_high",
+                    "long_tail_opportunities"
+                ]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "cluster_topic": { "label": "Topic", "format": "text" },
+                    "trend_score": { "label": "Trend Score", "format": "number" },
+                    "search_volume": { "label": "Search Volume", "format": "number" },
+                    "competition": { "label": "Competition", "format": "text" },
+                    "ai_cluster_score": { "label": "AI Score", "format": "number" },
+                    "best_strategy": { "label": "Recommended Strategy", "format": "text" },
+                    "top_of_page_bid_low": { "label": "Low Bid ($)", "format": "number" },
+                    "top_of_page_bid_high": { "label": "High Bid ($)", "format": "number" },
+                    "long_tail_opportunities": { "label": "Long-Tail Keywords", "format": "object" }
+                }
+            }
+        }
+    }
+}

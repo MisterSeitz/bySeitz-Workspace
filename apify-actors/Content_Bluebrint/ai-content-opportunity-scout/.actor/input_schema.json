@@ -1,0 +1,43 @@
+{
+  "title": "AI Content Opportunity Scout Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "source_dataset_id": {
+      "title": "Source: Topic Trend Dataset",
+      "type": "string",
+      "description": "Select the dataset output by the Topic Trend Aggregator actor.",
+      "editor": "resourcePicker",
+      "resourceType": "dataset"
+    },
+    "min_trend_score": {
+      "title": "Minimum Trend Score",
+      "type": "integer",
+      "description": "Topics below this score (0.0 to 10.0) will be ignored.",
+      "editor": "number",
+      "default": 5.0
+    },
+    "language_code": {
+      "title": "Keyword Language Code (ISO 639-1)",
+      "type": "string",
+      "description": "Google Ads API language code for keyword planning (e.g., 'en', 'es', 'de').",
+      "editor": "textfield",
+      "default": "en"
+    },
+    "location_ids": {
+      "title": "Location IDs (Google Ads)",
+      "type": "array",
+      "description": "List of Google Ads API location IDs for keyword planning (e.g., [2840] for United States).",
+      "editor": "json",
+      "items": {
+        "type": "integer"
+      },
+      "default": [
+        2840
+      ]
+    }
+  },
+  "required": [
+    "source_dataset_id"
+  ]
+}

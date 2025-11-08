@@ -1,0 +1,52 @@
+{
+"title": "🕵️‍♂️ IP WHOIS Inspector Input",
+"type": "object",
+"schemaVersion": 1,
+"properties": {
+"ipAddresses": {
+"title": "🌐 IP Addresses to Look Up",
+"type": "array",
+"description": "A list of IP addresses to inspect (e.g., 8.8.8.8, 1.1.1.1, 2606:4700:4700::1111).",
+"editor": "stringList",
+"default": [
+"8.8.8.8",
+"1.1.1.1"
+]
+},
+"performReverseDns": {
+"title": "🏷️ Perform Reverse DNS",
+"type": "boolean",
+"description": "If checked, finds the hostname (PTR record) for each IP.",
+"default": true
+},
+"performGeolocation": {
+"title": "🌍 Perform Geolocation",
+"type": "boolean",
+"description": "If checked, finds the physical location (country, city) for each IP.",
+"default": true
+},
+"performPortScan": {
+"title": "🚦 Perform Port Scan",
+"type": "boolean",
+"description": "If checked, scans the ports listed in the 'Ports to Scan' field.",
+"default": false
+},
+"portsToScan": {
+"title": "🔌 Ports to Scan",
+"type": "array",
+"description": "A list of port numbers to check (e.g., 80, 443, 22). Only used if 'Perform Port Scan' is checked.",
+"editor": "stringList",
+"default": [
+"80",
+"443",
+"22",
+"21",
+"3306",
+"5432"
+]
+}
+},
+"required": [
+"ipAddresses"
+]
+}

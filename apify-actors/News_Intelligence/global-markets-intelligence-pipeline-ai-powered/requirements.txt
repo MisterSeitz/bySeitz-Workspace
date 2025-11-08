@@ -1,0 +1,7 @@
+apify
+apify-client
+pydantic
+langgraph
+feedparser
+google-genai
+requests

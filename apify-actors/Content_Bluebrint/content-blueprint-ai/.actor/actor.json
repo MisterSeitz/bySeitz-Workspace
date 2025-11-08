@@ -1,0 +1,17 @@
+{
+  "actorSpecification": 1,
+  "name": "content-blueprint-ai",
+  "title": "Content Blueprint AI (Flagship)",
+  "version": "1.0.0",
+  "description": "The public-facing content intelligence actor. Generates multi-platform creative blueprints (TikTok, YouTube, Blog, AdCopy) from trend, sentiment, and keyword data.",
+  "dockerfile": "../Dockerfile",
+  "input": "./input_schema.json", // FIX: Simplified input path to string
+  "run": {
+    "cmd": ["python", "-u", "src/main.py"],
+    "workingDir": "."
+  },
+  "storages": {
+    "dataset": "./dataset_schema.json" // FINAL FIX: Changed to a single string path to satisfy "must be string"
+  },
+  "readme": "../README.md"
+}

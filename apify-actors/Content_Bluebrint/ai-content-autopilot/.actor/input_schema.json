@@ -1,0 +1,97 @@
+{
+  "title": "AI Content Autopilot Input",
+  "description": "Configure the orchestration of the content intelligence pipeline.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "openaiApiKey": {
+      "title": "OpenAI API Key (Secret)",
+      "description": "Your private OpenAI API Key. This is required and will be passed to all actors in the pipeline.",
+      "type": "string",
+      "editor": "textfield",
+      "isSecret": true,
+      "sectionCaption": "1. Secret Configuration"
+    },
+    "pipelinesToInclude": {
+      "title": "Pipelines to Process",
+      "description": "Select the news and data pipelines to use as the source.",
+      "type": "array",
+      "editor": "select",
+      "sectionCaption": "2. Data Sources",
+      "prefill": [
+        "global_markets",
+        "world_news",
+        "artificial_intelligence",
+        "venture_capital",
+        "global_geopolitical_news"
+      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "global_markets",
+          "world_news",
+          "artificial_intelligence",
+          "venture_capital",
+          "global_geopolitical_news"
+        ]
+      }
+    },
+    "newsFreshnessHours": {
+      "title": "Data Freshness (Hours)",
+      "description": "Actors will be rerun if their last successful run is older than this value.",
+      "type": "integer",
+      "default": 6,
+      "editor": "number"
+    },
+    "runAggregator": {
+      "title": "Run Topic Aggregator",
+      "description": "Stage 1: Gathers articles and clusters them into trending topics.",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": true,
+      "sectionCaption": "3. Pipeline Configuration"
+    },
+    "runKeywordAnalysis": {
+      "title": "Run Keyword Analysis",
+      "description": "Stage 2: Enriches topics with keyword data and search volume.",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": true
+    },
+    "runSentimentAnalysis": {
+      "title": "Run Sentiment Analysis",
+      "description": "Stage 3: Analyzes the sentiment for each trending topic.",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": true
+    },
+    "runIdeaGeneration": {
+      "title": "Run Content Idea Generator",
+      "description": "Stage 4: Generates creative content blueprints for the final topics.",
+      "type": "boolean",
+      "editor": "checkbox",
+      "default": true
+    },
+    "outputFormats": {
+      "title": "Output Content Formats",
+      "description": "Select which content formats to generate in the final stage.",
+      "type": "array",
+      "editor": "select",
+      "sectionCaption": "4. Content Output",
+      "prefill": [
+        "TikTok",
+        "Blog",
+        "YouTube"
+      ],
+      "items": {
+        "type": "string",
+        "enum": [
+          "TikTok",
+          "Blog",
+          "YouTube"
+        ]
+      }
+    }
+  },
+  "required": ["openaiApiKey", "pipelinesToInclude"]
+}

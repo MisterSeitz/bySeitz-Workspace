@@ -1,0 +1,36 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "topic_processed": {
+        "type": "string",
+        "title": "Topic Processed"
+      },
+      "trend_score": {
+        "type": "number",
+        "title": "Trend Score"
+      },
+      "output_datasets": {
+        "type": "array",
+        "title": "Output Datasets",
+        "description": "The named datasets where the full content blueprints were saved."
+      }
+    }
+  },
+  "views": {
+    "Run_Summary": {
+      "title": "Run Summary",
+      "transformation": {
+        "fields": [
+          "topic_processed",
+          "trend_score",
+          "output_datasets"
+        ]
+      },
+      "display": {
+        "component": "table"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+apify>=1.0.0
+apify-client>=1.2.0
+pandas
+numpy
+aiohttp
+feedparser
+httpx
+openai
+pydantic
+python-dateutil

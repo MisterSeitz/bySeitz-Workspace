@@ -1,0 +1,12 @@
+# --- Apify Core Dependencies (Grouped for Stability) ---
+apify==3.0.1 
+apify-client==2.1.0 
+
+# --- Google Ads API Client ---
+google-ads
+protobuf
+
+# --- General Utilities/Future Use ---
+requests
+openai
+python-dateutil

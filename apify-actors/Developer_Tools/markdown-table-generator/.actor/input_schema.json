@@ -1,0 +1,91 @@
+{
+  "title": "📊 Table Generator",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "sourceRunId": {
+      "title": "🔁 Source Actor Run ID",
+      "type": "string",
+      "description": "Optional: An Actor Run ID. If provided, this Actor will fetch the dataset from that run and convert it, ignoring all other data source inputs.",
+      "default": "",
+      "editor": "textfield"
+    },
+    "dataSource": {
+      "title": "📥 Data Source (if not using Run ID)",
+      "type": "string",
+      "description": "Select the source of your data.",
+      "enum": [
+        "rawText",
+        "url"
+      ],
+      "enumTitles": [
+        "Raw Text",
+        "URL"
+      ],
+      "default": "rawText"
+    },
+    "rawData": {
+      "title": "📝 Raw Data",
+      "type": "string",
+      "description": "Paste your raw CSV, TSV, or JSON (array of objects) data here. Only used if Data Source is 'Raw Text'.",
+      "editor": "textarea",
+      "default": "header1,header2\nvalue1,value2"
+    },
+    "fileUrl": {
+      "title": "🌐 File URL",
+      "type": "string",
+      "description": "A direct URL to a .csv, .json, .tsv, or .xlsx file. Only used if Data Source is 'URL'.",
+      "default": "",
+      "editor": "textfield"
+    },
+    "fileType": {
+      "title": "🏷️ File Type (for Raw Text)",
+      "type": "string",
+      "description": "Manually specify the raw text format. 'auto' will try to guess.",
+      "enum": [
+        "auto",
+        "csv",
+        "json",
+        "tsv",
+        "excel"
+      ],
+      "default": "auto"
+    },
+    "dataHasHeader": {
+      "title": "📋 Data Has Header Row?",
+      "type": "boolean",
+      "description": "For CSV/TSV: Check this if the first line of your data is the header.",
+      "default": true
+    },
+    "columns": {
+      "title": "🎯 Select Columns",
+      "type": "string",
+      "description": "Optional: Comma-separated list of column names to include (e.g., Product,Price,SKU). Leave empty to include all.",
+      "default": "",
+      "editor": "textfield"
+    },
+    "columnAlignments": {
+      "title": "📏 Column Alignments (for Markdown)",
+      "type": "string",
+      "description": "A single value (left, center, right) OR a comma-separated list (e.g., left,right,center). Only used for Markdown output.",
+      "default": "left",
+      "editor": "textfield"
+    },
+    "outputFormat": {
+      "title": "📤 Output Format",
+      "type": "string",
+      "description": "Select the format for the generated table.",
+      "enum": [
+        "markdown",
+        "html",
+        "confluence"
+      ],
+      "enumTitles": [
+        "Markdown (for GitHub, etc.)",
+        "HTML (for websites)",
+        "Confluence Wiki Markup"
+      ],
+      "default": "markdown"
+    }
+  }
+}

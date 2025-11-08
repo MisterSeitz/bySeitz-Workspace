@@ -1,0 +1,29 @@
+{
+  "title": "Sentiment Compass Input",
+  "description": "Configuration for the Sentiment Compass analysis actor.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "source_dataset_id": {
+      "title": "Source Dataset",
+      "type": "string",
+      "description": "Select the dataset from an upstream actor (e.g., Topic Trend Aggregator) to be analyzed.",
+      "resourceType": "dataset"
+    },
+    "max_topics_to_process": {
+      "title": "Max Topics to Process",
+      "type": "integer",
+      "description": "Maximum number of topics to analyze from the source dataset.",
+      "editor": "number",
+      "default": 10
+    },
+    "max_entities_to_analyze": {
+      "title": "Max Entities per Topic",
+      "type": "integer",
+      "description": "Maximum number of top entities (by mentions) to analyze for specific sentiment within each topic.",
+      "editor": "number",
+      "default": 3
+    }
+  },
+  "required": ["source_dataset_id"]
+}

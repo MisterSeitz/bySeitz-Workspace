@@ -1,0 +1,74 @@
+{
+  "title": "Topic Trend Aggregator Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "news_sources": {
+      "title": "Data Sources to Aggregate",
+      "type": "array",
+      "description": "List of Apify actor sources with category and type mappings.",
+      "editor": "json",
+      "minItems": 1,
+      "default": [
+        {
+          "actorId": "iRfe4oocMnOpxGtAm",
+          "categoryName": "Global Markets Intelligence",
+          "sourceType": "Verified News"
+        },
+        {
+          "actorId": "WwB1ORDfMlK9SAVih",
+          "categoryName": "Artificial Intelligence Sector",
+          "sourceType": "Verified News"
+        },
+        {
+          "actorId": "byseitz.agency/gdelt-news",
+          "categoryName": "Global Geopolitical & Economic News",
+          "sourceType": "Verified News"
+        }
+      ],
+      "items": {
+        "type": "object",
+        "properties": {
+          "actorId": {
+            "type": "string",
+            "title": "Actor ID",
+            "description": "The Apify actor ID (e.g., username/actor-name) producing the dataset."
+          },
+          "categoryName": {
+            "type": "string",
+            "title": "Category Name",
+            "description": "Friendly label grouping this data source (e.g., World News)."
+          },
+          "sourceType": {
+            "type": "string",
+            "title": "Source Type",
+            "description": "The category of the source (e.g., professional news, blog, social media).",
+            "editor": "select",
+            "enum": [
+              "Verified News",
+              "Blog Feed",
+              "YouTube",
+              "Reddit"
+            ]
+          }
+        },
+        "required": ["actorId", "categoryName", "sourceType"]
+      }
+    },
+    "max_articles": {
+      "title": "Max Articles per Source",
+      "type": "integer",
+      "description": "Maximum number of articles to fetch per data source. Default is 20.",
+      "default": 20,
+      "editor": "number"
+    },
+    "max_clusters_per_category": {
+      "title": "Maximum Clusters per Category",
+      "type": "integer",
+      "description": "Limit how many trend clusters the LLM extracts per category (default: 5).",
+      "default": 5,
+      "editor": "number"
+    }
+  },
+  "required": ["news_sources"]
+}

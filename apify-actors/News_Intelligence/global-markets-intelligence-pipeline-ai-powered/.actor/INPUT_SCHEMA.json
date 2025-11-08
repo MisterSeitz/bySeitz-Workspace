@@ -1,0 +1,66 @@
+{
+  "title": "🌎 World News Intelligence Pipeline",
+  "description": "Fetch and analyze news from top global sources using a reliable two-stage AI analysis pipeline, prioritizing source diversity.",
+  "schemaVersion": 1,
+  "type": "object",
+  "properties": {
+    "source": {
+      "title": "News Category / Alpha Vantage Topic",
+      "type": "string",
+      "editor": "select",
+      "enum": [
+        "all",
+        "Monetary Policy",
+        "Index/Market Data",
+        "Financial Stability",
+        "Economics/Research",
+        "Technology/FinTech",
+        "Commodities/Crypto",
+        "World/General News",
+        "Alpha Vantage News",
+        "custom"
+      ],
+      "enumTitles": [
+        "🌍 All Categories [RSS Feeds + AV Topics]",
+        "🏦 Monetary Policy [Central Bank Speeches, FT, Bloomberg, FSB]",
+        "📈 Index/Market Data [Investing.com Stocks/Forex/Bonds, WSJ, CNBC]",
+        "🛡️ Financial Stability [FSB Reports/Policy, Investing.com Economy]",
+        "🔬 Economics/Research [HBR, Investing.com Fundamental, Bloomberg]",
+        "💻 Technology/FinTech [TechCrunch, NYT, ZDNet]",
+        "💰 Commodities/Crypto [Investing.com Metals/Crypto/Energy]",
+        "📰 World/General News [BBC, NYT, Reuters, Investing.com News]",
+        "⭐ Alpha Vantage News [Dedicated Market News]",
+        "🧩 Custom URL"
+      ],
+      "default": "all",
+      "description": "Select the news category to collect from. This filter is applied to the traditional RSS Feeds AND is used to determine the topic filter for the Alpha Vantage NEWS_SENTIMENT API."
+    },
+    "customFeedUrl": {
+      "title": "Custom RSS Feed URL",
+      "type": "string",
+      "editor": "textfield",
+      "description": "Provide a custom RSS feed URL (if 'Custom' selected). This applies only to the standard RSS data source."
+    },
+    "maxArticles": {
+      "title": "Maximum Articles Per Source",
+      "type": "integer",
+      "editor": "number",
+      "description": "The maximum number of articles to fetch from *each* source (RSS and Alpha Vantage). The final output dataset may contain up to double this number.",
+      "default": 10
+    },
+    "useSummarization": {
+      "title": "Use AI Summarization (Extra Cost 💸)",
+      "type": "boolean",
+      "editor": "checkbox",
+      "description": "If true, the Gemini model will generate a concise, market-focused summary for *every* article, which incurs an additional cost (Pay Point 2: LLM Summarization). [**RECOMMENDED OPTION**; otherwise output will only be basic RSS summary]",
+      "default": true
+    },
+    "runTestMode": {
+      "title": "Admin Test Mode (Bypasses ALL External API Costs)",
+      "type": "boolean",
+      "description": "Setting this to true bypasses the Alpha Vantage API call and all Gemini (Grounding + Summarization) LLM calls, enabling zero-cost testing of the workflow. **DO NOT ENABLE IN PRODUCTION.**",
+      "default": false
+    }
+  },
+  "required": ["source"]
+}

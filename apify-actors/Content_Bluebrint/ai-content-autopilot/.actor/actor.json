@@ -1,0 +1,12 @@
+{
+  "actorSpecification": 1,
+  "name": "ai-content-autopilot",
+  "title": "AI Content Autopilot",
+  "version": "1.0",
+  "buildTag": "latest",
+  "readme": "./README.md",
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}

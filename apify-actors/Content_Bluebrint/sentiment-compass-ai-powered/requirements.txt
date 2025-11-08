@@ -1,0 +1,7 @@
+apify-client >= 1.2.0
+requests
+google-ads
+protobuf
+python-dateutil
+openai
+aiohttp

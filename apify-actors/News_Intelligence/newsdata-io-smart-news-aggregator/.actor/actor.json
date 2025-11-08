@@ -1,0 +1,15 @@
+{
+    "actorSpecification": 1,
+    "name": "newsdata-aggregator",
+    "title": "NewsData.io Aggregator",
+    "description": "Fetches, deduplicates, and summarizes news articles from NewsData.io with API usage tracking.",
+    "version": "1.0",
+    "buildTag": "latest",
+    "meta": {
+        "templateId": "python-empty"
+    },
+    "dockerfile": "../Dockerfile",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    }
+}

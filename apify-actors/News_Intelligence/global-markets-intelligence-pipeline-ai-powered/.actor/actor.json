@@ -1,0 +1,28 @@
+{
+  "actorSpecification": 1,
+  "name": "global-markets-intelligence-pipeline-ai-powered",
+  "title": "📈 Global Markets Intelligence Pipeline",
+  "description": "This Apify Actor processes global markets news from major RSS feeds and transforms headlines into structured, actionable market intelligence using the Google Search Results Scraper's AI Overview and combined Language Model (LLM) analysis.",
+  "version": "0.3",
+  "dockerfile": "./Dockerfile",
+  "entrypoint": "python -m src.main",
+  "input": "./INPUT_SCHEMA.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "buildTag": "latest",
+  "actorRunInputExample": {
+    "source": "all",
+    "maxArticles": 20,
+    "useSummarization": true,
+    "runTestMode": false
+  },
+  "authors": [
+    {
+      "name": "bySeitz AI",
+      "url": "https://www.visita.co.za"
+    }
+  ],
+  "categories": ["News", "Finance", "RSS", "AI Summarization", "Markets", "Analytics"],
+  "isPublic": true
+}

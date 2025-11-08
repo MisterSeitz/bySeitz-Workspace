@@ -1,0 +1,15 @@
+{
+  "actorSpecification": 1,
+  "name": "celestial-time-engine",
+  "title": "Celestial Time Engine",
+  "description": "Calculates sunrise, sunset, twilights, prayer times, and more for any location and date.",
+  "version": "0.0.1",
+  "meta": {
+    "model": "gemini"
+  },
+  "dockerfile": "../Dockerfile",
+  "storages": {
+    "input": "./input_schema.json",
+    "dataset": "./dataset_schema.json"
+  }
+}

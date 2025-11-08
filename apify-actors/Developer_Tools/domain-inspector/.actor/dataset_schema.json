@@ -1,0 +1,64 @@
+{
+"actorSpecification": 1,
+"fields": {
+"domain": {
+"type": "string",
+"description": "The domain name that was inspected."
+},
+"records": {
+"type": "object",
+"description": "An object containing the results for each queried DNS record type."
+},
+"whois": {
+"type": "object",
+"description": "WHOIS registration data. Contains 'error' field if lookup failed."
+},
+"http_status": {
+"type": "object",
+"description": "Results from the HTTP/HTTPS status code check."
+},
+"ssl_info": {
+"type": "object",
+"description": "SSL Certificate details, including issuer and expiration."
+}
+},
+"views": {
+"overview": {
+"title": "Results",
+"transformation": {
+"fields": [
+"domain",
+"http_status",
+"ssl_info",
+"whois",
+"records"
+]
+},
+"display": {
+"component": "table",
+"properties": {
+"domain": {
+"label": "Domain",
+"format": "text"
+},
+"http_status": {
+"label": "HTTP Status",
+"format": "object"
+},
+"ssl_info": {
+"label": "SSL Info",
+"format": "object"
+},
+"whois": {
+"label": "WHOIS",
+"format": "object"
+},
+"records": {
+"label": "DNS Records",
+"format": "object"
+}
+}
+}
+}
+}
+}

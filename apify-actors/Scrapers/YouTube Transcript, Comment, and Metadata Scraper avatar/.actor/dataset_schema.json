@@ -1,0 +1,63 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Transcripts",
+      "transformation": {
+        "fields": [
+          "videoId",
+          "title",
+          "channel",
+          "views",
+          "likes",
+          "transcriptMerged",
+          "comments", 
+          "_chargeStatus",
+          "error"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "videoId": {
+            "label": "Video ID",
+            "format": "text"
+          },
+          "title": {
+            "label": "Title",
+            "format": "text"
+          },
+          "channel": {
+            "label": "Channel",
+            "format": "text"
+          },
+          "views": {
+            "label": "Views",
+            "format": "text"
+          },
+          "likes": {
+            "label": "Likes",
+            "format": "text"
+          },
+          "transcriptMerged": {
+            "label": "Transcript",
+            "format": "text"
+          },
+          "comments": {
+            "label": "Comments",
+            "format": "text"
+          },
+          "_chargeStatus": {
+            "label": "Charge Status",
+            "format": "text"
+          },
+          "error": {
+            "label": "Error",
+            "format": "text"
+          }
+        }
+      }
+    }
+  }
+}

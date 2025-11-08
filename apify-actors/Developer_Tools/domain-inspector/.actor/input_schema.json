@@ -1,0 +1,74 @@
+{
+"title": "🕵️‍♂️ Domain Inspector Input",
+"type": "object",
+"schemaVersion": 1,
+"properties": {
+"domains": {
+"title": "🌐 Domains to Look Up",
+"type": "array",
+"description": "A list of domains or full URLs to inspect (e.g., apify.com, https://https://www.google.com/search?q=google.com/search). The tool will clean them automatically.",
+"editor": "stringList",
+"default": [
+"apify.com",
+"https://www.google.com/search?q=google.com"
+]
+},
+"recordTypes": {
+"title": "🔍 Record Types to Query",
+"type": "array",
+"description": "Select the DNS record types you want to query.",
+"editor": "select",
+"default": [
+"A",
+"AAAA",
+"MX",
+"TXT",
+"CNAME",
+"NS",
+"SOA"
+],
+"items": {
+"type": "string",
+"enum": [
+"A",
+"AAAA",
+"MX",
+"TXT",
+"CNAME",
+"NS",
+"SOA"
+],
+"enumTitles": [
+"A (IPv4 Address)",
+"AAAA (IPv6 Address)",
+"MX (Mail Exchange)",
+"TXT (Text Record)",
+"CNAME (Canonical Name)",
+"NS (Name Server)",
+"SOA (Start of Authority)"
+]
+}
+},
+"performWhois": {
+"title": "👤 Perform WHOIS Lookup",
+"type": "boolean",
+"description": "If checked, the Actor will also perform a WHOIS query to get registrar and expiration data. This is slower.",
+"default": true
+},
+"performHttpCheck": {
+"title": "🚦 Perform HTTP Status Check",
+"type": "boolean",
+"description": "If checked, the Actor will check the HTTP status code for both http:// and https://.",
+"default": true
+},
+"performSslCheck": {
+"title": "🔒 Perform SSL Certificate Check",
+"type": "boolean",
+"description": "If checked, the Actor will check the SSL certificate for its issuer and expiration date.",
+"default": true
+}
+},
+"required": [
+"domains"
+]
+}

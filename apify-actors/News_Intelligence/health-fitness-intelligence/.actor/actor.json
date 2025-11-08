@@ -1,0 +1,29 @@
+{
+  "actorSpecification": 1,
+  "name": "health-fitness-news-summarizer",
+  "title": "🥗 Health & Fitness Intelligence Pipeline",
+  "description": "This Apify Actor processes Health, Fitness, and Nutrition news from major RSS feeds and transforms headlines into structured, actionable intelligence using AI-powered summarization and analysis (DuckDuckGo architecture).",
+  "version": "0.2",
+  "dockerfile": "./Dockerfile",
+  "entrypoint": "python -m src.main",
+  "input": "./INPUT_SCHEMA.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "buildTag": "latest",
+  "actorRunInputExample": {
+    "source": "all",
+    "maxArticles": 20,
+    "region": "us-en",
+    "timeLimit": "w",
+    "runTestMode": false
+  },
+  "authors": [
+    {
+      "name": "bySeitz",
+      "url": "https://www.visita.co.za"
+    }
+  ],
+  "categories": ["News", "Health", "Fitness", "RSS", "AI", "Analytics"],
+  "isPublic": true
+}
